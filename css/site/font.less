@@ -1,0 +1,52 @@
+@muller: 				fontfabric_-_mullerregular;
+@muller-ital:			fontfabric_-_mullerregularitalic;
+@muller-bold: 			fontfabric_-_mullerbold;
+@muller-light: 			fontfabric_-_mullerlight;
+
+@icon: 					Flaticon;
+.include-custom-font(@family: @muller, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src:url('@{url-path-fonts}/@{family}.eot');
+		src:url('@{url-path-fonts}/@{family}.eot?#iefix') format('embedded-opentype'),
+			url('@{url-path-fonts}/@{family}.woff') format('woff'),
+			url('@{url-path-fonts}/@{family}.ttf') format('truetype'),
+			url('@{url-path-fonts}/@{family}.svg#icon') format('svg');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+/*muller*/
+.include-custom-font(@family: @muller, 			@weight: normal, @style: normal);
+.include-custom-font(@family: @muller-ital, 	@weight: normal, @style: normal);
+.include-custom-font(@family: @muller-bold, 	@weight: normal, @style: normal);
+.include-custom-font(@family: @muller-light, 	@weight: normal, @style: normal);
+/*end's muller*/
+.include-custom-font(@family: @icon, 			@weight: normal, @style: normal);
+
+
+@icon-badge: 		"\f100";
+@icon-close: 		"\f101";
+@icon-fb: 			"\f102";
+@icon-gym: 			"\f103";
+@icon-phone: 		"\f104";
+@icon-purse: 		"\f105";
+@icon-transfer: 	"\f106";
+@icon-search: 		"\f107";
+@icon-share: 		"\f108";
+@icon-tool: 		"\f109";
+@icon-transport: 	"\f10a";
+@icon-tw: 			"\f10b";
+@icon-user: 		"\f10c";
+@icon-vk: 			"\f10d";
+@icon-block: 		"\f10e";
+@icon-fast: 		"\f10f";
+@icon-network: 		"\f110";
+@icon-next: 		"\f111";
+@icon-sale: 		"\f112";
+@icon-tags: 		"\f113";
+@icon-transport2: 	"\f114";
+@icon-user2: 		"\f115";
+@icon-wrench: 		"\f116";
+@icon-gallery: 		"\f117";
+@icon-gallery2:		"\f118";

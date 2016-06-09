@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[snp tpl="src/block/site/default/head/.html" ] 
+	</head>
+	<body>	
+		[snp tpl="src/block/site/default/navbar/.html" class="navbar-site _czr__navbar-site" ]
+
+		[snp tpl="src/block/site/page/gallery/view.html" class="content-block gallery-page _czr__gallery-page" ] 
+
+		[snp tpl="src/block/site/default/footer/.html" class="footer-site " ]
+ 
+		[snp tpl="src/block/site/default/head/script.html" ]
+
+		<script src="/plugins/fancybox/source/jquery.fancybox.js?v=2.1.4"></script>
+		<script src="/plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<link rel="stylesheet" href="/plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+		<script>
+			$(document).ready(function() {
+				$('.fancybox').fancybox(); 
+			})
+		</script>
+	</body>
+</html> 

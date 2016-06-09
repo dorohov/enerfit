@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[snp tpl="src/block/site/default/head/.html" ] 
+	</head>
+	<body>	
+		[snp tpl="src/block/site/default/navbar/.html" class="navbar-site _czr__navbar-site" ]
+
+		[snp tpl="src/block/site/page/gallery/.html" class="content-block gallery-page _czr__gallery-page" ] 
+
+		[snp tpl="src/block/site/default/footer/.html" class="footer-site " ]
+ 
+		[snp tpl="src/block/site/default/head/script.html" ]
+
+		<link rel="stylesheet" href="/plugins/owl.carousel/owl.carousel.css">
+		<script src="/plugins/owl.carousel/owl.carousel.min.js"></script>
+		<script >
+			$(document).ready(function(){
+				$('._czr__gp__owl').owlCarousel({
+					//autoWidth:true,
+					margin: 45,
+					nav: true,
+					navText: [],
+				    items:8 
+				}); 
+			});
+
+		</script>
+	</body>
+</html> 

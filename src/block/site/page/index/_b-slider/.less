@@ -1,0 +1,23 @@
+._czr__index-slider{
+	//opacity: @opacity;
+}
+._czr__isl-control {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	&.left {
+		left: 20px;
+	}
+	&.right {
+		right: 20px;
+	}
+	img{
+		transition: @transition-site;		
+	}
+	&:hover{		
+		img{
+			transform: translateY(0%) scale(1.1);		
+		}
+	}
+}

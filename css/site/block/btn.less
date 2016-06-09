@@ -1,0 +1,141 @@
+.btn-orange{
+	display: inline-block;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	background:@b-orange; 
+	text-align: center;
+	color: @white; 
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 46px;
+	padding: 0 28px;
+	transition: @transition-site;
+	letter-spacing: 0.5px;
+
+	&:hover{
+		background: darken(@b-orange, 10%);
+		color: @white;
+		text-decoration: none;
+	}
+	&:active{
+		color: @white;
+	}
+	&:focus{
+		text-decoration: none;
+		color: @white;
+	}
+}
+.btn-line{
+	display: inline-block;
+	border: 1px solid @b-orange;
+	outline: none;
+	text-decoration: none;
+	background:none; 
+	text-align: center;
+	color: @b-color; 
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 46px;
+	padding: 0 28px;
+	transition: @transition-site;
+	letter-spacing: 0.5px;
+	&:hover{
+		background: darken(@b-orange, 10%);
+		color: @white;
+		text-decoration: none;
+	}
+}
+
+.btn-soc{
+	display: block;
+	&:before{
+		display: block;
+		font-family: @icon;
+		content: @icon-share;
+		border-radius: 50%;
+		border: 1px solid #dadada;
+		color: #dadada;
+		text-align: center;
+		line-height: 54px;
+		width: 56px;
+		font-size: 20px;
+		transition: @transition-site;
+	}
+	&:hover{
+		&:before{
+			border-color: #c1c1c1;
+			color: #c1c1c1;
+		}
+	}
+}
+.btn-soc-dropdown{
+	background: none;
+	left: inherit;
+    right: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    min-width: auto;
+    margin: 0;
+}
+.btn-soc-icon{
+	display: block;
+	margin-bottom: 5px;
+	&:before{
+		display: block;
+		font-family: @icon;
+		content: @icon-share;
+		border-radius: 50%;
+		border: 1px solid;
+		text-align: center;
+		line-height: 54px;
+		width: 56px;	
+		font-size: 24px;
+		background: @white;
+		transition: @transition-site;
+	}
+	&.icon-vk{
+		&:before{
+			content: @icon-vk;
+			color: #537599;
+			border-color: #537599;
+			font-size: 26px;
+		}
+		&:hover{
+			&:before{
+				background: #537599;
+				color: @white;
+				border-color: @white;
+			}
+		}
+	}	
+	&.icon-fb{
+		&:before{
+			content: @icon-fb;
+			color: #3a5795;
+			border-color: #3a5795;
+		}
+		&:hover{
+			&:before{
+				background: #3a5795;
+				color: @white;
+				border-color: @white;
+			}
+		}
+	}
+	&.icon-tw{
+		&:before{
+			content: @icon-tw;
+			color: #41abe1;
+			border-color: #41abe1;
+		}
+		&:hover{
+			&:before{
+				background: #41abe1;
+				color: @white;
+				border-color: @white;
+			}
+		}
+	}
+}

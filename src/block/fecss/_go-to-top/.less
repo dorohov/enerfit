@@ -1,0 +1,38 @@
+	.go-to-top {
+		position:fixed;
+		opacity:0;
+		z-index:-1;
+		bottom:120%;
+		right:3%;
+		content:'';
+		display:inline-block;
+		width:1px;
+		height:1px;
+		#fe.brep();
+		#fe.bpos();
+		//#fe.bi('go-to-top.png');
+		text-decoration:none;		
+		transition:all 0.999s ease;		
+		&.active {
+			background-color:  #1b1b1b;
+			box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+			width: 50px;
+			height: 50px;
+			bottom:10%;
+			opacity:1;
+			z-index:15;
+			&:before{
+				content: '';
+				position: absolute;
+				border-left: 7px solid fadeout(@b-orange, 100%);
+				border-right: 7px solid fadeout(@b-orange, 100%);
+				border-bottom: 7px solid fadeout(@b-orange, 0%);
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:hover {
+				transform:scale(1.2);
+			}
+		}
+	}
