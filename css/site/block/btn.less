@@ -11,8 +11,7 @@
 	line-height: 46px;
 	padding: 0 28px;
 	transition: @transition-site;
-	letter-spacing: 0.5px;
-
+	letter-spacing: 0.5px;	
 	&:hover{
 		background: darken(@b-orange, 10%);
 		color: @white;
@@ -24,6 +23,10 @@
 	&:focus{
 		text-decoration: none;
 		color: @white;
+	}
+	@media @media-size-lg{
+		font-size: 12px;
+		line-height: 40px;	
 	}
 }
 .btn-line{
@@ -45,6 +48,10 @@
 		color: @white;
 		text-decoration: none;
 	}
+	@media @media-size-lg{
+		font-size: 12px;
+		line-height: 40px;	
+	}
 }
 
 .btn-soc{
@@ -61,6 +68,11 @@
 		width: 56px;
 		font-size: 20px;
 		transition: @transition-site;
+		@media @media-size-lg{
+			line-height: 44px;
+			width: 46px;
+			font-size: 18px;
+		}
 	}
 	&:hover{
 		&:before{
@@ -94,6 +106,11 @@
 		font-size: 24px;
 		background: @white;
 		transition: @transition-site;
+		@media @media-size-lg{
+			line-height: 44px;
+			width: 46px;
+			font-size: 18px;
+		}
 	}
 	&.icon-vk{
 		&:before{
@@ -101,6 +118,7 @@
 			color: #537599;
 			border-color: #537599;
 			font-size: 26px;
+			@media @media-size-lg{font-size: 24px;}
 		}
 		&:hover{
 			&:before{

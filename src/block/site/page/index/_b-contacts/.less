@@ -4,13 +4,32 @@
 	background: @b-line;
 	padding: 5px 0 0 0;
 	color: @white;
-	font-size: 24px;
-	line-height: 36px;
 	a{color: @white;}
+	@media @media-size-sm{
+		display: flex;
+		flex-direction: column;		
+		font-size: 18px;
+		line-height: 24px;
+	}		
+	@media @media-size-lg{		
+		font-size: 18px;
+		line-height: 24px;
+	}
+	@media @media-size-xl2{
+		font-size: 22px;
+		line-height: 34px;
+	}
+	@media @media-size-xxl{
+		font-size: 24px;
+		line-height: 36px;
+	}
 }
 #map{
 	width: 100%;
 	height: 600px;
+	@media @media-size-sm{
+		height: 400px;
+	}
 } 
 ._czr__icnt-block{
 	background-color:  #1b1b1b;
@@ -21,6 +40,22 @@
     width: 100%;
     max-width: 810px;
     padding: 35px 50px 50px;
+	@media @media-size-sm{
+		max-width: 100%;
+		position: relative;
+		left: inherit;
+		top: inherit;
+		order: -1;
+    	padding: 35px 60px 50px;
+
+	}
+	@media @media-size-lg{
+		top: 80px;
+		left: 80px;
+		max-width: 650px;
+		padding: 35px 60px 50px;
+	}
+	@media @media-size-xl2{max-width: 700px;}
 }
 ._czr__icnt-heading{
 	margin-bottom: 35px;

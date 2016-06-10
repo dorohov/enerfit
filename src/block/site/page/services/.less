@@ -44,6 +44,24 @@
 	font-size: 24px;
 	line-height: 36px;  
 	transition: @transition-site; 
+	@media @media-size-lg {
+		height: 195px;
+		padding: 20px 20px 20px 60px;
+		font-size: 16px;
+		line-height: 28px; 
+	}
+	@media @media-size-xl2 {
+		font-size: 20px;
+		line-height: 32px; 		
+	}	
+	> div{
+		width: 80%;
+		&._czr__sp__item-icon{width: 20%;}
+		@media @media-size-lg {
+			width: 78%;
+			&._czr__sp__item-icon{width: 22%;}
+		}
+	}
 }
 
 ._czr__sp__item-icon{
@@ -52,19 +70,30 @@
 		border: 1px solid @b-orange;
 		border-radius: 50%;
 		display: block;
+		font-size: 44px;
 		width: 100px;
 		line-height: 98px;
-		font-size: 44px;
 		text-align: center;
 		margin-right: 70px;
 		transition: @transition-site; 
+		@media @media-size-lg {
+			font-size: 40px;
+			width: 90px;
+			line-height: 88px;
+		}
+		@media @media-size-xl2 {margin-right: 40px;}
 	}
 	&.icon-transport:before{content: @icon-transport;}
 	&.icon-tool:before{content: @icon-tool;}
 	&.icon-badge:before{content: @icon-badge;}
 	&.icon-purse:before{content: @icon-purse;}
 	&.icon-gym:before{content: @icon-gym;}
-	&.icon-transfer:before{content: @icon-transfer;}
+	&.icon-transfer:before{
+		content: @icon-transfer;
+		font-size: 36px;
+		@media @media-size-lg {font-size: 32px;}
+	}
+	width: 20%;
 }
 ._czr__sp__item-heading{
 	@media @media-size-xxl {max-width: 600px;}	
@@ -79,5 +108,13 @@
 	transition: @transition-site;
 	&.in{
 		height: 100%;
+	}
+	@media @media-size-lg {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	@media @media-size-xl2 {
+		font-size: 15px;
+		line-height: 22px;
 	}
 }

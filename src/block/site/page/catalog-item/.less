@@ -4,6 +4,9 @@
 	transition: @transition-site;
 	overflow: hidden;
 	padding-top: 0;	
+	@media @media-size-lg{
+		.heading-block-site {margin-bottom: 5px;}
+	}
 } 
 ._czr__cip__inner{
 	display: flex;
@@ -19,7 +22,11 @@
 	}
 	width: 50%;
 	padding-left:2px; 
-	padding-right:2px; 
+	padding-right:2px; 	
+	@media @media-size-lg{
+		width: 43%;
+		&._czr__cip__cols-right{width: 57%;} 
+	}
 }
 ._czr__cip__block{
 	background: @white; 
@@ -38,6 +45,7 @@
 ._czr__cip__carousel-item{
 	height: inherit;
 	min-height: 821px;
+	@media @media-size-lg{min-height: 690px;}
 }
 ._czr__cip__carousel-item-center{
 	display: flex;
@@ -45,9 +53,12 @@
 	align-items: center;
 	padding: 60px;
 	height: inherit;
+	min-height: 821px;
+	@media @media-size-lg{min-height: 690px;}
 	img{
 		margin: 0 auto
 	}
+	div{width: 100%;}
 }
 ._czr__cip__carousel-indicators{
 	position: absolute;
@@ -79,6 +90,9 @@
 	margin-bottom: 4px;
 	//min-height: 50%;
 	width: 100%;
+	@media @media-size-lg{
+		padding: 25px 15px 35px 35px;
+	}
 }
 ._czr__cip__heading-site{
 	font-size: 36px;
@@ -87,6 +101,14 @@
     letter-spacing: 0.35px;    
     margin-bottom: 5px;
     margin-top: 5px;
+	@media @media-size-lg{
+		font-size: 30px;
+    	line-height: 42px;
+	}
+	@media @media-size-xl2{
+		font-size: 30px;
+		line-height: 42px;
+	}
 }
 ._czr__cip__cost{
 	font-size: 30px;
@@ -96,15 +118,27 @@
 ._czr__cip__text{
 	max-width: 630px;
 	margin-bottom: 40px;
+	@media @media-size-lg{
+		max-width: 550px;
+		font-size: 15px;
+		line-height: 20px;    
+		margin-bottom: 20px;
+	}
 }
 ._czr__cip__btn-block{
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 ._czr__cip__btn-orange{
 	font-family: @muller-bold;
 	line-height: 57px;
     padding: 0px 40px;
+	@media @media-size-lg{
+		line-height: 47px;
+		padding: 0 30px;
+		font-size: 13px;
+	}
 }
 .btn-soc-block{
 	a{		
@@ -118,6 +152,7 @@
 	padding: 35px 20px 45px 45px;
 	//min-height: 50%;
 	width: 100%;
+	@media @media-size-lg{padding: 15px 20px 35px 35px}
 }
 ._czr__cip__tabs-navs{
 	list-style: none;
@@ -165,10 +200,18 @@
 			}
 		}
 	}
+	@media @media-size-lg{
+		margin-bottom: 20px; 
+		> li{
+			> a{
+				padding: 5px 0 0;
+				font-size: 12px;
+			}
+		}
+	}
 }
 ._czr__cip__tabs-content{
 	font-size: 14px;
-	line-height: 19px;
 	ul{
 		list-style: none;
 		margin-bottom: 0;
@@ -187,6 +230,12 @@
 				height: 6px;
 				display: block;
 			}
+		}
+	}
+	@media @media-size-lg{
+		line-height: 18px;
+		ul{
+			li{margin-bottom: 5px;}			
 		}
 	}
 	._cb__col{

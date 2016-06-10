@@ -11,6 +11,13 @@
 	padding: 40px 20px;
 	font-size: 16px;
 	margin-bottom: 5px;
+	@media @media-size-lg{
+		font-size: 13px;
+		padding: 50px 45px 40px;
+	}
+	@media @media-size-xl2{
+		font-size: 15px;
+	}
 }
 ._fs__navbar-inner{
 	justify-content: space-between;	
@@ -18,7 +25,8 @@
 ._fs__navbar-item{
 	list-style: none;
 	> li{
-		margin-bottom: 10px; 
+		margin-bottom: 10px;
+		@media @media-size-lg{margin-bottom: 6px;} 
 		&._heading{
 			font-family: @muller-bold;
 			text-transform: uppercase;
@@ -31,6 +39,10 @@
 				height: 1px;
 				background: @b-orange;
 				margin: 20px 0;
+				@media @media-size-lg{
+					max-width: 40px;
+					margin: 11px 0;
+				}
 			}
 		}
 		> a{
@@ -59,4 +71,10 @@
 	a{
 		color: @b-footer; 
 	}
+	@media @media-size-lg{
+		padding: 25px 45px 20px;
+	}
+}
+._fs__dorohovdesign{
+	a{display: block;}
 }

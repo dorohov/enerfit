@@ -2,8 +2,16 @@
 	//opacity: @opacity;
 	background: #ededed url('@{url-path-img}/index/bg-services.png') no-repeat right bottom;
 	padding: 115px 105px;
+	@media @media-size-sm{
+		padding:55px 60px 0px;    
+		background-size: auto 100%;
+	}
+	@media @media-size-lg{padding:45px 60px 115px}
 }
 ._czr__is-heading{
+	@media @media-size-sm{margin-bottom: 70px;}
+	@media @media-size-lg{margin-bottom: 80px;}
+	@media @media-size-xl2{margin-bottom: 70px;}
 	@media @media-size-xxl{margin-bottom: 95px;}	
 }
 ._czr__is-flex{
@@ -13,6 +21,7 @@
 ._czr__is-item{
 	//width: 16.6666667%;
 	.tooltip{
+		&.in {opacity: 1;}
 		.tooltip-inner{
 			background: @white;
 			font-family: @muller;
@@ -33,6 +42,10 @@
 			}
 		}
 	} 
+	@media @media-size-sm{
+		width: 33.3333%;
+		margin-bottom: 75px;
+	}
 }
 ._czr__is-item-inner{
 	//position: relative;
@@ -48,6 +61,14 @@
 		text-align: center;
 		margin: 0 auto 25px;
 		transition: @transition-site;
+		@media @media-size-sm{
+			width: 90px;
+			line-height: 90px;
+		}
+		@media @media-size-lg{
+			width: 90px;
+			line-height: 90px;
+		}
 	}
 	&:hover{
 		&:before{
@@ -75,4 +96,5 @@
 	color:  #2d2d2d;
 	font-size: 14px;
 	font-family: @muller-bold;
+	text-align: center;
 }
