@@ -2,6 +2,9 @@
 	//opacity: @opacity;
 	background: url('@{url-path-img}/bg/bg-about.png') no-repeat bottom right, url('@{url-path-img}/bg/bg-404.png') no-repeat center ;
 	background-color: @b-bg;
+    @media @media-size-xs{background: @b-bg;}
+    @media @media-size-sm-p{background-size: auto 70%, 100% auto;}
+    @media @media-size-sm-l{background-size: auto 80%, 100% auto;}
     @media @media-size-lg{background-size: auto 90%, 100% auto;}
 }
 ._czr__404p__search-form{
@@ -9,6 +12,7 @@
 }
 ._czr__404p__note{
 	max-width: 770px;
+    @media @media-size-xs{max-width: 100%;}
     @media @media-size-lg{max-width: 500px;}
     @media @media-size-xl2{max-width: 600px;} 
     line-height: 26px;

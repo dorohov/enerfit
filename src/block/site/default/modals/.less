@@ -78,10 +78,26 @@
 	.close{
 		position: absolute;
 		outline: 0;
-		top: 27px;
-		right: 27px;
 		font-size: 28px;
 		line-height: 18px;
+	}
+	@media @media-size-xs {
+		padding: 30px 20px 70px;
+		.close{
+			border: 1px solid;
+			border-radius: 50%;
+			width: 35px;
+			line-height: 33px;
+			bottom: 20px;
+			left: 50%;
+    		transform: translateX(-50%);
+		}
+	}
+	@media @media-no-phone {
+		.close{
+			top: 27px;
+			right: 27px;
+		}
 	}
 }
 .modal-title {
@@ -92,11 +108,21 @@
 	&._mv__modal-title {
 		font-size: 30px;
 		line-height: 34px; 
+		@media @media-size-xs {
+			font-size: 24px;
+			line-height: 28px;  		
+		}
+	}
+	@media @media-size-xs {
+		font-size: 24px;
+		line-height: 28px;  		
+	}
+	@media @media-size-xs-l {
+		margin-bottom: 10px;
 	}
 	@media @media-size-lg {
 		font-size: 30px;
-		line-height: 34px;  
-		
+		line-height: 34px;  		
 	}
 }
 
@@ -105,13 +131,21 @@
 	text-align: center;
 	max-width: 390px;
 	margin: 0 auto;
+	@media @media-size-xs {
+		text-align: left;
+		max-width: 480px;
+	}
 }
 ._mr__note{
 	margin-bottom: 25px; 
+	@media @media-size-xs-l {
+		margin-bottom: 10px;
+	}
 }
 ._czr__ms__input{
 	margin-bottom: 35px;
 	position: relative;
+	@media @media-size-xs-l {margin-bottom: 20px;}
 	&:after{
 		font-family: @icon;
 		position: absolute;
@@ -158,12 +192,20 @@
 		margin-top: 15px;
 		min-width: 180px;
 	}
+	@media @media-size-xs-l {
+		text-align: center;
+	}
 }
 ._ms__video{
 	text-align: center;
 	iframe{
 		width: 100%;
 		height: 450px;
+		@media @media-size-xs {height: 250px;}
+		@media @media-size-sm {
+			height: 400px;
+			max-width: 70%;
+		}
 		@media @media-size-lg {height: 350px;}
 	}
 }

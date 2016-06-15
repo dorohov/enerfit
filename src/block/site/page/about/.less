@@ -4,6 +4,13 @@
 	.btn-line{
 		min-width: 230px;
 	}
+    @media @media-size-xs{background: @b-bg;}
+    @media @media-size-sm{
+		background-size: 600px auto;
+		padding-bottom: 510px;
+		background-position: bottom center;
+		.btn-line{min-width: 190px;}
+    }
     @media @media-size-lg{
     	background-size: 600px auto;
 		.btn-line{min-width: 200px;}
@@ -16,6 +23,16 @@
     > div, > p, > ul{
     	margin-bottom: 15px;
     }
+	@media @media-device{
+		margin-left: 0;
+		max-width: 100%;
+	    > div, > p, > ul{
+	    	margin-bottom: 10px;
+	    }
+	}
+	@media @media-size-sm{
+		line-height: 30px;
+	}
 	@media @media-size-lg{
 		margin-left: 0;
 		max-width: 690px;
@@ -27,6 +44,14 @@
 	font-size: 16px;
 	line-height: 24px;
 	margin-top: 50px;
+	@media @media-size-xs{		
+		margin-top: 35px;
+	    font-size: 15px;
+    	line-height: 20px;
+	}
+	@media @media-size-sm-p{		
+		margin-top: 85px;
+	}
 	@media @media-size-lg{
 		margin-top: 35px;
 		font-size: 14px;
@@ -50,7 +75,15 @@
 		text-align: center;
 		margin-right: 20px;
 		margin-top: -7px;
+		@media @media-size-sm-p{
+			float: none;
+			margin: 0 auto 35px;
+			width: 90px;
+			font-size: 38px;
+			line-height: 88px;
+		}
 	}
+		
 	&.icon-tags:before{content:@icon-tags; display: block;}
 	&.icon-fast:before{content:@icon-fast; display: block;}
 	&.icon-user2:before{content:@icon-user2; display: block;}
@@ -59,5 +92,19 @@
 	&.icon-network:before{content:@icon-network; display: block;}
 	&.icon-sale:before{content:@icon-sale; display: block;}
 	&.icon-wrench:before{content:@icon-wrench; display: block;}
+	@media @media-size-xs{
+		width: 100%;   
+		padding-top: 0px;
+		margin-bottom: 20px;
+		&:before{
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+	}
+	@media @media-size-sm{
+		padding-right: 25px!important;
+		padding-left: 60px!important;
+		margin-bottom: 50px; 
+	}
 	@media @media-size-lg{margin-bottom: 30px;}
 }

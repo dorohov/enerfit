@@ -2,6 +2,13 @@
 	//opacity: @opacity;
 	background: #ededed url('@{url-path-img}/index/bg-services.png') no-repeat right bottom;
 	padding: 115px 105px;
+	@media @media-size-xs{
+		padding: 45px 30px 60px;
+		background: #ededed;
+	}
+	@media @media-size-xs-l{
+		padding: 45px 30px 0px;
+	}
 	@media @media-size-sm{
 		padding:55px 60px 0px;    
 		background-size: auto 100%;
@@ -9,6 +16,7 @@
 	@media @media-size-lg{padding:45px 60px 115px}
 }
 ._czr__is-heading{
+	@media @media-size-xs{margin-bottom: 45px;}
 	@media @media-size-sm{margin-bottom: 70px;}
 	@media @media-size-lg{margin-bottom: 80px;}
 	@media @media-size-xl2{margin-bottom: 70px;}
@@ -17,6 +25,10 @@
 ._czr__is-flex{
 	display: flex;
 	justify-content: space-between;
+	@media @media-size-xs{
+		flex-wrap: wrap;
+	}
+
 }
 ._czr__is-item{
 	//width: 16.6666667%;
@@ -42,6 +54,15 @@
 			}
 		}
 	} 
+	@media @media-size-xs{
+		width: 100%;
+		margin-bottom: 60px;
+		&:last-child{margin-bottom: 0}
+	}
+	@media @media-size-xs-l{
+		width: 50%;
+		margin-bottom: 50px;
+	}
 	@media @media-size-sm{
 		width: 33.3333%;
 		margin-bottom: 75px;
@@ -61,6 +82,19 @@
 		text-align: center;
 		margin: 0 auto 25px;
 		transition: @transition-site;
+		@media @media-size-xs{
+			margin-bottom: 20px;
+		}
+		@media @media-size-xs-p{
+			width: 110px;
+			line-height: 110px;
+			font-size: 60px; 
+		}
+		@media @media-size-xs-l{
+			width: 80px;
+			line-height: 80px;
+			font-size: 35px; 
+		}
 		@media @media-size-sm{
 			width: 90px;
 			line-height: 90px;

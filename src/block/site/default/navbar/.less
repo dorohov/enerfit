@@ -39,6 +39,10 @@
 	padding: 30px 10px 10px 25px;
 	position: relative;
     z-index: 100;
+	@media @media-size-xs{
+		padding: 15px 10px 10px 18px;
+		img{width: 122px;}
+	}
 	@media @media-size-sm{
 		padding: 25px 10px 10px 30px;
    		//max-width: 180px;
@@ -58,6 +62,8 @@
     	float: none!important; 
 		overflow: auto!important;
 	}
+	@media @media-size-xs{margin: 10px 0}
+	@media @media-size-xs-l{margin: 10px 0 20px}
 	@media @media-size-sm-p{ 
     	max-height: 700px;		
 	}
@@ -70,6 +76,7 @@
 			width: 100%;
 			float: none;
 		}
+		@media @media-size-xs-p{margin: 0 0 10px;}
 		@media @media-size-lg{margin: 0 15px;}
 		@media @media-size-xl2{margin: 0 15px;}
 		@media @media-size-xxl{margin: 0 22px;}
@@ -99,6 +106,9 @@
 			@media @media-screen{
 				padding: 37px 0px 30px;
 				border-bottom: 3px solid fadeout(@b-orange, 100%);
+			}
+			@media @media-size-xs{
+			    padding: 3px 0px;
 			}
 			@media @media-size-sm{font-size: 16px}
 			@media @media-size-lg{font-size: 12px}
@@ -147,8 +157,14 @@
 			width: 100%;
 			float: none;
 		}
+		@media @media-size-xs {
+			padding: 0;
+		}
 		> li{
 			margin-bottom: 20px;
+			@media @media-size-xs {
+				margin-bottom: 10px;
+			}
 			&:last-child{margin-bottom: 0}
 			> a{
 			    padding: 3px 27px;
@@ -195,6 +211,10 @@
 			//left: 50%;
 			//transform: translate(-50%, 0%);
 		}
+		@media @media-size-xs {
+		    left: 0;
+		    top: 10px;
+		}
 	}
 	.btn-close{
 		&:before{
@@ -214,8 +234,8 @@
 .navbar-collapse {
 	position: relative;
 	max-height: 270px;
-	@media @media-device {
-	}
+	border: 0;
+	box-shadow: none;
 	@media @media-screen {	
 		padding-right: 60px!important;
 		display: block;
@@ -224,10 +244,16 @@
 		width: 100%;
 		margin: 0px;
 		z-index: 0;
+		border: 0;
+		box-shadow: none;		
 		@media @media-device {
 			position: relative;
 			padding-top: 60px;
 			float: none;
+		}
+		@media @media-size-xs {
+		    padding-left: 0;
+	    	padding-top: 40px;
 		}
 		@media @media-screen {
 			position: absolute;
@@ -243,6 +269,10 @@
 			max-width: 1175px;
 			.input-group-btn{
 				width: 96px;
+				@media @media-size-xs {
+					width: 26px;
+					padding-top: 12px;
+				}
 			}
 			@media @media-device {
 				position: static;
@@ -300,6 +330,18 @@
 			}
 			input {
 				width: 100%;
+			}
+			@media @media-size-xs{
+				position: absolute;
+				top: 0px;
+				height: 100%;
+				left: 20px;
+				right: 20px;
+				width: auto;
+			}
+			@media @media-size-xs-l{
+				padding-top: 0;
+				padding-left: 40px;
 			}
 			@media @media-size-lg2{width: 85%;}
 			@media @media-size-lg{width: 75%;}
@@ -369,30 +411,21 @@
 		}
 		&:after {
 			bottom: -13px;
-		}
-		/*
-		@media @media-size-xs-l{			
-			height: 5px;
-			top: 30px;
-			&:before,
-			&:after {
-				height: 5px;
-			}
-			&:before{
-				top: -17px;
-			}
-			&:after {
-				bottom: -17px;
-			}
-		}*/
+		}		
 	}
     @media @media-size-xs{
     	width: 58px;
     	height: 58px;
     	span{
-    		top: 28px;
-    		left: 15px;
-   			right: 15px;
+		    top: 27px;
+    		left: 8px;
+    		right: 20px;
+			&:before{
+				top: -9px;
+			}
+			&:after {
+				bottom: -9px;
+			}	
     	}
     }
 }
@@ -404,56 +437,31 @@
  * down to center and transform into an "x".
  */
 .c-hamburger--htx {
-  //background-color: #ff3264;
-}
-
-.c-hamburger--htx span {
-  -webkit-transition: background 0s 0.3s;
-          transition: background 0s 0.3s;
-}
-
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-  -webkit-transition-duration: 0.3s, 0.3s;
+	span {
+		transition: background 0s 0.3s;
+		&::before,&::after {
           transition-duration: 0.3s, 0.3s;
-  -webkit-transition-delay: 0.3s, 0s;
           transition-delay: 0.3s, 0s;
-}
-
-.c-hamburger--htx span::before {
-          transition-property: top, 'transform';
-}
-
-.c-hamburger--htx span::after {
-  -webkit-transition-property: bottom, -webkit-transform;
-          transition-property: bottom, 'transform';
-}
-
-/* active state, i.e. menu open */
-.c-hamburger--htx.is-active {
-  //background-color: #cb0032;
-}
-
-.c-hamburger--htx.is-active span {
-  background: none;
-}
-
-.c-hamburger--htx.is-active span::before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.c-hamburger--htx.is-active span::after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  -webkit-transition-delay: 0s, 0.3s;
-          transition-delay: 0s, 0.3s;
+		}
+		&::before {
+       		transition-property: top, 'transform';
+		}
+		&::after {
+			transition-property: bottom, 'transform';
+		}
+	}
+	&.is-active {
+  		span {
+  			background: none;
+  			&::before, &::after {transition-delay: 0s, 0.3s;}
+			&::before {
+				top: 0;
+				transform: rotate(45deg);
+			}
+			&::after {
+  				bottom: 0;
+				transform: rotate(-45deg);
+			}
+  		}
+	}
 }

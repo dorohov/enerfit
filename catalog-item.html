@@ -5,11 +5,31 @@
 <title>www.enerfit.ru</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta HTTP-EQUIV="Cache-Control" content="no-cache" />
+<!--<meta HTTP-EQUIV="Cache-Control" content="no-cache" />-->
 
 <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
 <link type="image/x-icon" href="/favicon.ico" rel="icon" />
 
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/plugins/owl.carousel/owl.carousel.css">
 <link href="/css/site.css" rel="stylesheet"> 
 	</head>
 	<body>	
@@ -81,6 +101,9 @@
 
 		<div class="content-block catalog-page _czr__catalog-item-page">
 	<div class="_czr__cip__inner">
+		<div class="_czr__cip__cols _czr__cip__cols-top ">			
+			<div class="_czr__cip__note-sm _czr__cip__block"></div>
+		</div>
 		<div class="_czr__cip__cols">
 			<div class="_czr__cip__slider _czr__cip__block">
 				<div id="carousel-catalog-item" class="_czr__cip__carousel carousel slide" data-ride="carousel">
@@ -126,11 +149,11 @@
 					<div>
 						<div class="dropdown btn-soc-block">
 							<a class="btn-soc" data-toggle="dropdown" href="#"></a>
-							<ul class="dropdown-menu btn-soc-dropdown">
+							<div class="dropdown-menu btn-soc-dropdown">
 								<div><a href="#" class="btn-soc-icon icon-vk"></a></div>
 								<div><a href="#" class="btn-soc-icon icon-fb"></a></div>
 								<div><a href="#" class="btn-soc-icon icon-tw"></a></div>
-							</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -381,11 +404,11 @@
 	</div>
 </footer>
 
-		<div class="modal fade modal-site" id="modal-order" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade modal-site" id="modal-order" tabindex="-1" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-body">
-				<form action="" class="modal-reviews">
+				<form action="#" class="modal-reviews">
 					<h3 class="modal-title">Заявка на покупку</h3>
 					<div class="_mr__note">Пожалуйста, оставьте свои данные, и наши менеджеры свяжутся с Вами для уточнения деталей заказа</div>
 					<div class="_czr__ms__input icon-user">
@@ -418,7 +441,7 @@
 <script src="/js/device.min.js" ></script>
 <script src="/js/azbn.js" ></script>
 <script src="/js/hamburger.js" ></script>
-
+<script src="/plugins/owl.carousel/owl.carousel.min.js"></script>
 <script src="/js/document-ready.js" ></script>
 <script>
 	$(window).load(function(){

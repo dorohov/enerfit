@@ -5,9 +5,15 @@
 	padding: 5px 0 0 0;
 	color: @white;
 	a{color: @white;}
-	@media @media-size-sm{
+	@media @media-device{
 		display: flex;
-		flex-direction: column;		
+		flex-direction: column;				
+	}
+	@media @media-size-xs{
+		font-size: 15px;
+		line-height: 22px;
+	}	
+	@media @media-size-sm{	
 		font-size: 18px;
 		line-height: 24px;
 	}		
@@ -27,6 +33,12 @@
 #map{
 	width: 100%;
 	height: 600px;
+	@media @media-size-xs-p{
+		height: 350px;
+	}
+	@media @media-size-xs-l{
+		height: 200px;
+	}
 	@media @media-size-sm{
 		height: 400px;
 	}
@@ -40,14 +52,18 @@
     width: 100%;
     max-width: 810px;
     padding: 35px 50px 50px;
-	@media @media-size-sm{
+	@media @media-device{
 		max-width: 100%;
 		position: relative;
 		left: inherit;
 		top: inherit;
 		order: -1;
-    	padding: 35px 60px 50px;
-
+	}
+	@media @media-size-xs{
+		padding: 30px 30px 40px;
+	}
+	@media @media-size-sm{
+    	padding: 35px 40px 50px;
 	}
 	@media @media-size-lg{
 		top: 80px;
@@ -59,8 +75,12 @@
 }
 ._czr__icnt-heading{
 	margin-bottom: 35px;
+	@media @media-size-xs{margin-bottom: 15px;}
 }
 ._czr__icnt-list{
 	margin-bottom: 40px;
-	li{margin-bottom: 30px}
+	li{
+		margin-bottom: 30px;
+		@media @media-size-xs{margin-bottom: 15px;}
+	}
 }

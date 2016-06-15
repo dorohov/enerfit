@@ -18,6 +18,7 @@
 	color: @white;
 	position: relative;
 	margin-bottom: 4px; 
+	background-size: cover !important;
 	&:last-child{margin-bottom: 0;}
 	&:before{
 		content: '';
@@ -29,20 +30,17 @@
 		background: fadeout(@black, 40%);
 		z-index: 2;
 	}
-	@media @media-size-lg {
-		height: 610px;    
-		background-size: cover !important;
-	}
-	@media @media-size-xl2 {
-		height: 780px;    
-		background-size: cover !important;
-	}
+	@media @media-size-xs {height: 360px; padding: 20px 35px}
+	@media @media-size-sm {height: 580px;}
+	@media @media-size-lg {height: 610px;}
+	@media @media-size-xl2 {height: 780px;}
 }
 ._czr__vp__item-note{
 	position: relative;
 	z-index: 5;
 	max-width: 625px;
 	text-align: center;
+	@media @media-size-sm {max-width: 525px;}
 	@media @media-size-lg {max-width: 500px;}
 }
 ._czr__vp__item-play{
@@ -76,6 +74,25 @@
 			transform: translate(-30%, -50%) scale(1.2);
 		}
 	}
+	@media @media-size-xs {
+		width: 58px;
+		height: 58px;
+		margin-bottom: 20px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			border-left: 15px solid @white;
+			border-top: 7px solid fadeout(@white, 100%);
+			border-bottom: 7px solid fadeout(@white, 100%);
+		}
+	}
+	@media @media-size-sm {
+		width: 98px;
+		height: 98px;
+		margin-bottom: 40px;
+	}
 	@media @media-size-lg {
 		width: 98px;
 		height: 98px;
@@ -95,6 +112,22 @@
 		background: @b-orange;
 		margin: 35px auto;
 	}
+	@media @media-size-xs {
+		font-size: 18px;
+    	line-height: 24px;
+		&:after{
+			width: 100px;
+			margin: 15px auto;
+		}
+	}
+	@media @media-size-sm {
+		font-size: 24px;
+    	line-height: 36px;
+		&:after{
+			width: 80px;
+			margin: 25px auto;
+		}
+	}
 	@media @media-size-lg {
 		font-size: 24px;
     	line-height: 36px;
@@ -111,8 +144,15 @@
 ._czr__vp__item-time{
 	font-size: 14px;
 	line-height: 26px;
+	@media @media-size-sm {
+		font-size: 16px;
+    	line-height: 28px;
+    }
 }
 ._czr__vp__btn-more{
 	margin-top: 60px;
 	margin-bottom: 60px;
+	@media @media-size-xs {
+		.btn-orange{max-width: 220px; margin: 0 auto;}
+	}
 }

@@ -12,6 +12,10 @@
 	padding: 0 28px;
 	transition: @transition-site;
 	letter-spacing: 0.5px;	
+	&:focus{
+		text-decoration: none;
+		color: @white;
+	}
 	&:hover{
 		background: darken(@b-orange, 10%);
 		color: @white;
@@ -20,10 +24,11 @@
 	&:active{
 		color: @white;
 	}
-	&:focus{
-		text-decoration: none;
-		color: @white;
-	}
+    @media @media-size-xs{font-size: 13px; padding: 0 15px;}
+    @media @media-size-xs-p{
+    	display: block;
+    	width: 100%;
+    }
 	@media @media-size-lg{
 		font-size: 12px;
 		line-height: 40px;	
@@ -43,10 +48,19 @@
 	padding: 0 28px;
 	transition: @transition-site;
 	letter-spacing: 0.5px;
+	&:focus{
+		text-decoration: none;
+		color: @b-color; 
+	}
 	&:hover{
 		background: darken(@b-orange, 10%);
 		color: @white;
 		text-decoration: none;
+	}
+	@media @media-device{
+		font-size: 12px;
+		line-height: 40px;
+		padding: 0 15px;
 	}
 	@media @media-size-lg{
 		font-size: 12px;
@@ -83,8 +97,8 @@
 }
 .btn-soc-dropdown{
 	background: none;
-	left: inherit;
-    right: 0;
+	left: 100%;    
+	transform: translateX(-56px);
     border-radius: 0;
     border: none;
     box-shadow: none;
