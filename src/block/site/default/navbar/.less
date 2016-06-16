@@ -62,7 +62,10 @@
     	float: none!important; 
 		overflow: auto!important;
 	}
-	@media @media-size-xs{margin: 10px 0}
+	@media @media-size-xs{
+		margin: 10px 0;
+		//max-height: 330px;
+	}
 	@media @media-size-xs-l{margin: 10px 0 20px}
 	@media @media-size-sm-p{ 
     	max-height: 700px;		
@@ -214,6 +217,9 @@
 		@media @media-size-xs {
 		    left: 0;
 		    top: 10px;
+			&:before{
+			    line-height: 18px;
+			}
 		}
 	}
 	.btn-close{
