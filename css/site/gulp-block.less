@@ -1746,7 +1746,7 @@
 			@media @media-screen {padding: 15px 12px;}
 		}
 		input {
-			padding: 16px 12px;
+			padding: 0px 12px;
 			color: rgb(160, 160, 160);
 			box-shadow: none;
 			color: @white;
@@ -2421,6 +2421,17 @@
 }
 ._czr__cp__item-cost{
 	color: @b-orange;
+	&:after{
+		font-family: @icon;
+		font-size: 16px;
+		display: inline-block;
+		vertical-align: top;
+		font-weight: bold;
+		margin-left: 2px;
+	}
+	&.icon-ruble:after{content: @icon-ruble}
+	&.icon-dollar:after{content: @icon-dollar}
+	&.icon-euro:after{content: @icon-euro}
 }
 ._czr__cp__item-btn{
 	opacity: 0;
@@ -2671,10 +2682,25 @@
 	font-size: 30px;
 	color: @b-orange;
 	font-family: @muller-bold;
+	&:after{
+		font-family: @icon;
+		font-size: 22px;
+		display: inline-block;
+		vertical-align: top;
+		font-weight: bold;
+		margin-left: 2px;
+	}
+	&.icon-ruble:after{content: @icon-ruble}
+	&.icon-dollar:after{content: @icon-dollar}
+	&.icon-euro:after{content: @icon-euro}
+
 	@media @media-size-xs{
 		width: 110px;
 		margin-left: 20px;
 		font-size: 20px;
+		&:after{
+			font-size: 18px;
+		}
 	}
 }
 ._czr__cip__text{

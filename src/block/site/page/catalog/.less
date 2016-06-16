@@ -158,6 +158,17 @@
 }
 ._czr__cp__item-cost{
 	color: @b-orange;
+	&:after{
+		font-family: @icon;
+		font-size: 16px;
+		display: inline-block;
+		vertical-align: top;
+		font-weight: bold;
+		margin-left: 2px;
+	}
+	&.icon-ruble:after{content: @icon-ruble}
+	&.icon-dollar:after{content: @icon-dollar}
+	&.icon-euro:after{content: @icon-euro}
 }
 ._czr__cp__item-btn{
 	opacity: 0;
