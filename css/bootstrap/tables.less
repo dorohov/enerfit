@@ -19,7 +19,7 @@ th {
 
 // Baseline styles
 
-.table {
+.table, .text-block table {
   width: 100%;
   max-width: 100%;
   margin-bottom: @line-height-computed;
@@ -41,6 +41,7 @@ th {
   > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid @table-border-color;
+    font-family: @muller-bold;
   }
   // Remove top border from thead by default
   > caption + thead,
@@ -180,7 +181,7 @@ table {
     border: 1px solid @table-border-color;
 
     // Tighten up spacing
-    > .table {
+    > .table, table {
       margin-bottom: 0;
 
       // Ensure the content doesn't wrap

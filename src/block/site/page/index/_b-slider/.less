@@ -1,5 +1,37 @@
 ._czr__index-slider{
 	//opacity: @opacity;
+	.owl-nav{
+		.owl-prev{			
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			left: 20px;
+			width: 64px;
+			height: 42px;
+			background: url('@{url-path-img}/icon/icon-arrow-left.png') no-repeat center;
+			@media @media-size-xs{
+				background-size: 30px;
+			    width: 34px;
+    			height: 32px;
+			} 
+		}
+		.owl-next{	
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			right: 20px;
+			width: 64px;
+			height: 42px;
+			background: url('@{url-path-img}/icon/icon-arrow-right.png') no-repeat center;	
+			@media @media-size-xs{
+				background-size: 30px;
+			    width: 34px;
+    			height: 32px;
+    		} 
+		}
+	}
 }
 ._czr__isl-control {
 	position: absolute;

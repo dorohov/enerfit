@@ -37,11 +37,11 @@ function fecss_ScreenJS() {
 	};
 	
 	ctrl.isSM = function() {
-		return (ctrl.screen.w < 992 && ctrl.screen.w > 767);
+		return (ctrl.screen.w < 1025 && ctrl.screen.w > 767);
 	};
 	
 	ctrl.isMD = function() {
-		return (ctrl.screen.w < 1200 && ctrl.screen.w > 991);
+		return (ctrl.screen.w < 1200 && ctrl.screen.w > 1024);
 	};
 	
 	ctrl.isLG = function() {
