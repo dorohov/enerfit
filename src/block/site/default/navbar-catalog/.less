@@ -90,8 +90,11 @@
 		font-size: 14px;    
 		letter-spacing: 0.5px;
 		.caret{color: @b-orange;}
+		&:focus{
+			color: @white;
+		}
 		&:hover{
-			color: inherit;
+			color: @b-orange;
 		}
 		&[aria-expanded="true"]{
 			.caret{
