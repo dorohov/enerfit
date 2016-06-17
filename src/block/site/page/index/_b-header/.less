@@ -5,8 +5,6 @@
 	height: 600px;
 	@media @media-size-xs{
 		height: auto;
-		padding-top: 25px;
-		padding-bottom: 50px;
 		.btn-orange{display: block;}
 	}
 	@media @media-size-sm-p{height: 615px;}
@@ -27,33 +25,33 @@
 			.owl-item{height: 100%}
 		}
 	}
-
+	@media @media-size-xs{
+		.carousel-inner {
+			padding-top: 25px;
+			padding-bottom: 50px;
+		}
+	}
 	.owl-dots{
 		position: absolute;
-		display: flex;
-		flex-direction: column;
-		top: 0px;
-		bottom: 0px;
-		left: 25px;
-		list-style: none;
-		padding: 20px 0;
+		display: flex!important;
 		justify-content: center;
 		z-index: 10;
-		margin-left: 0;
-		@media @media-screen{display: none;}
-		@media @media-size-xs{display: none !important;}
-		.owl-dot{
-			border:1px solid @b-orange;
-			width: 12px;
-			height: 12px;
+		bottom: 20px; 
+		left: 20px;
+		right: 20px; 
+		.owl-dot{			
+			border: 1px solid @b-orange;
+			width: 7px;
+			height: 7px;
 			border-radius: 50%;
 			transition: @transition-site;
-			margin: 15px 0;
 			cursor: pointer;
+			margin: 0 5px;
 			&.active{
 				background: @b-orange;
-			}		
+			}	
 		}
+		@media @media-screen{display: none!important;}
 	}
 }
 ._czr__ih-inner{
@@ -147,28 +145,61 @@
 		br{display: none;}
 	}
 }
+/*
 ._czr__ih-carousel-indicators{
 	position: absolute;
-	display: flex;
-	flex-direction: column;
-	top: 0px;
-	bottom: 0px;
-	left: 25px;
 	list-style: none;
-	padding: 20px 0;
+	margin-left: 0;
+	display: flex;
 	justify-content: center;
 	z-index: 10;
-	margin-left: 0;
+	margin-bottom: 0;
 	> li{
 		border:1px solid @b-orange;
-		width: 12px;
-		height: 12px;
+		width: 15px;
+		height: 15px;
 		border-radius: 50%;
 		transition: @transition-site;
-		margin: 15px 0;
 		cursor: pointer;
 		&.active{
 			background: @b-orange;
+		}
+	}
+	@media @media-device{
+		display: none;
+	}
+	@media @media-screen{
+		flex-direction: column;
+		top: 0px;
+		bottom: 0px;
+		left: 25px;
+		padding: 20px 0;
+		> li{
+			margin: 10px 0;
+		}
+	}
+}
+*/
+
+._czr__ih-control {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer; 
+	z-index: 10;
+	&.left {
+		left: 20px;
+	}
+	&.right {
+		right: 20px;
+	}
+	img{
+		transition: @transition-site;		
+		width: 55%;
+	}
+	&:hover{		
+		img{
+			transform: translateY(0%) scale(1.1);
 		}
 	}
 	@media @media-device{display: none;}

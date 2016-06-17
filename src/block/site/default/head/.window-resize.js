@@ -60,7 +60,7 @@ if (device.mobile() || device.tablet()) {
     	autoplayHoverPause:true
 	}); 
 	$("._czr__ih-carousel").removeAttr("data-ride").removeClass('carousel');
-	$("._czr__ih-carousel-indicators").css("display", "none");
+	//$("._czr__ih-carousel-indicators").css("display", "none");
 	$('._czr__ih-carousel .carousel-inner').owlCarousel({
 		margin: 0,
 		dots: true,

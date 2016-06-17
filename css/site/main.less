@@ -436,33 +436,38 @@ blockquote {
 }
 ._cb__catalog-filter{
 	//display: flex;
+	//align-items: center;
 	font-size: 14px;
-	align-items: center;
-	border-bottom: 1px solid  #cdcdcd;
-	max-width: 250px;
+	max-width: 260px;
 	width: 100%;
 	.form-control{
 		font-family: @muller;
 		font-size: 14px;
 		background: none;
-		border: none;
+		border: 1px solid  #cdcdcd;
 		box-shadow: none;
 	    border-radius: 0;
-    	padding: 0 0 0 5px;
+    	padding: 8px 0 8px 5px;
     	height: 100%;
     	position: relative;    
     	display: inline-block;
     	max-width: 160px;
     	float: right;
-    	margin-top: 4px;
+    	//margin-top: 4px;
+    	margin-left: 5px;
+	}
+	span{
+		vertical-align: middle;
+		display: inline-block;
+		line-height: 37px;
 	}
 	@media @media-size-xs {		
-		max-width: 230px;
+		max-width: 240px;
+		margin-top: 8px;
 		.form-control{
 	    	max-width: 140px;
-	    	margin-top: 2px;
 		}
-	}
+	}/*
 	@media @media-size-sm {		
 		.form-control{
 	    	margin-top: 2px;
@@ -472,7 +477,7 @@ blockquote {
 		.form-control{
 	    	margin-top: 2px;
 		}
-	}
+	}*/
 }
 ._czr__loader{
 	position: fixed;

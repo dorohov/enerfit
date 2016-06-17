@@ -53,6 +53,15 @@
 				margin-left: -10px;
 			}
 		}
+		&.bottom {
+			padding: 10px 0;
+			margin-top: 10px;
+			.tooltip-arrow{
+				border-bottom-color: @white;
+				border-width: 0px 10px 10px 10px;
+				margin-left: -10px;
+			}
+		}
 	} 
 	@media @media-size-xs{
 		width: 100%;
@@ -103,13 +112,13 @@
 			width: 90px;
 			line-height: 90px;
 		}
-	}
+	}/*
 	&:hover{
 		&:before{
 			background: @b-orange;
 			color: @white;
 		}
-	}
+	}*/
 	&.item1:before{content: @icon-transport;}
 	&.item2:before{content: @icon-tool;}
 	&.item3:before{content: @icon-badge;}
