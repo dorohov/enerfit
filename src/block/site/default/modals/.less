@@ -39,7 +39,7 @@
 	background-color: @modal-backdrop-bg;
 	// Fade for backdrop
 	&.fade { .opacity(0); }
-	&.in { .opacity(0.7); }
+	&.in { .opacity(0.95); }
 
 }
 .modal-dialog {
@@ -60,6 +60,19 @@
 		}
 	}
   
+}
+._mv__modal-dialog{
+	.modal-body{
+		background: none;
+		.close{
+			color: @white;
+			opacity: 0.95;
+			right: 50%; 
+		}
+	}
+	.modal-title {
+		color: @white;
+	}
 }
 .modal-content {
 	position: relative;
