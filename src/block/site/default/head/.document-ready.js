@@ -1,6 +1,6 @@
 $('img').addClass('img-responsive');
-var url = window.location.pathname;
-$('.navbar-nav a[href="'+url+'"]').parent().addClass('active'); 
+var url = window.location.href;
+$('.navbar-nav a[href="'+url+'"]').closest('li').addClass('active').closest('li.dropdown').addClass('active');
 $('._fs__navbar a[href="'+url+'"]').parent().addClass('active'); 
 $('._czr__index-slider .item').eq(0).addClass('active'); 
 $('._czr__cip__carousel .item').eq(0).addClass('active'); 
