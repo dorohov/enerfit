@@ -42,7 +42,7 @@
 	box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
 ._czr__cip__slider{
-	height: 100%;
+	//height: 100%;
 	background: linear-gradient(to bottom, #bdbdbd 0%, #f8f8f8 100%);
 }
 ._czr__cip__carousel{
@@ -231,7 +231,7 @@
 	&:after{
 		font-family: @icon;
 		font-size: 22px;
-		display: inline-block;
+		//display: inline-block;
 		vertical-align: top;
 		font-weight: bold;
 		margin-left: 2px;
@@ -307,10 +307,11 @@
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	//justify-content: space-between;
 	position: relative;
-	margin-left: -10px;
-	margin-right: -10px;
+	margin-left: -15px;
+	margin-right: -15px;
 	margin-bottom: 30px; 
 	&:after{
 		content: '';
@@ -324,8 +325,8 @@
 		right: 10px;
 	}
 	li{
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
 		a{
 			color:  #b8b8b8;
 			font-family: @muller-bold;
@@ -404,7 +405,8 @@
 		th, td{
 			width: 50%;
 			border-bottom: 1px solid #e6e6e6;
-			padding: 5px 0;    
+			padding: 5px 0; 
+			p{margin: 0;}   
 		}
 		tr{
 			&:last-child{
