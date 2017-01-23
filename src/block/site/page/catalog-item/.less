@@ -472,7 +472,7 @@
 		margin-right: 0px;
 		margin-left: 0px;
 	}
-	@media @media-size-xs{
+	@media @media-size-xs{ 
 		position: relative;
 		padding-bottom: 40px;
 		margin-bottom: 0;
@@ -484,7 +484,8 @@
 		z-index: 20;
 		justify-content: center;
 		@media @media-screen{display: none;}
-		@media @media-size-sm{display: none;}
+		@media @media-size-xs{display: flex!important;}
+		@media @media-size-sm{display: none!important;}
 		.owl-dot{
 			border-radius: 50%;
 			border: 1px solid @b-orange;
