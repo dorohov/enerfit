@@ -11,5 +11,59 @@
 		[snp tpl="src/block/site/default/footer/.html" class="footer-site " ]
  
 		[snp tpl="src/block/site/default/head/script.html" ]
+		<link rel="stylesheet" type="text/css" href="/css/lightslider.css" />
+		<link rel="stylesheet" type="text/css" href="/css/lightgallery.css" />
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#imageGallery').lightSlider({
+					gallery:true,
+					item:1,
+					thumbItem:8,
+					slideMargin:0,
+					thumbMargin: 20,
+					galleryMargin: 0, 
+					enableDrag: false,
+					currentPagerPosition:'middle',
+					currentPagerPosition:'left',
+					onSliderLoad: function(el) {
+						/*el.lightGallery({
+							selector: '#imageGallery .lslide'
+						});*/
+						//$(".lSPager.lSGallery").wrap("<div class='_czr__lSPager'></div>");
+					}, 	 
+					responsive : [
+			            {
+			                breakpoint:767,
+			                settings: {
+								thumbItem:4
+		                  	}
+			            },
+			            {
+			                breakpoint:475,
+			                settings: {
+								thumbItem:2
+		                  	}
+			            }
+			        ]
+				});  
+
+			});
+		</script>
+		<!-- light Slider -->
+		<script src="/plugins/lightSlider/js/lightslider.min.js"></script>
+		<!-- light Gallery -->
+		<script src="/plugins/lightGallery/js/lightgallery.js"></script>
+		<script src="/plugins/lightGallery/js/lg-thumbnail.js"></script>
+		<script src="/plugins/lightGallery/js/lg-zoom.js"></script>
+		<script src="/js/response.min.js" ></script> 
+		<script>
+			Response.create({
+			    prop: "width", 
+			    prefix: "data-src- r src",
+			    breakpoints: [1281,1025,961,768,481,320,0],
+			    lazy: true
+			});
+		</script>
 	</body>
 </html> 

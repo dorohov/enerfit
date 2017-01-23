@@ -1779,7 +1779,6 @@
 
 ._czr__cip__note{
 	padding: 25px 20px 45px 45px;
-	margin-bottom: 4px;
 	//min-height: 50%;
 	width: 100%;
 	@media @media-size-xs{
@@ -1907,6 +1906,8 @@
 	padding: 35px 20px 45px 45px;
 	//min-height: 50%;
 	width: 100%;
+
+	margin-top: 4px;
 	@media @media-size-xs{padding: 25px 20px;}
 	@media @media-size-sm{padding: 30px 20px 25px 40px;}
 	@media @media-size-lg{padding: 15px 20px 35px 35px}
@@ -2210,6 +2211,155 @@
 		color: #a6a6a6;
 	}
 }
+.lg-actions{
+	.lg-icon{
+		width: 64px;
+		height: 42px;
+		@media @media-size-xs{width: 42px;}
+		&::before{display: none!important;}
+		&::after{
+			content: ''!important;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.lg-next{		
+		&::after{
+			left: -30px!important;
+			background: url('@{url-path-img}/icon/icon-arrow-right.png') no-repeat center;
+				transform: translate(0%,-50%)!important;
+			background-size: contain;
+		}
+	}
+	.lg-prev{
+		&::after{
+			right: -30px!important;
+			background: url('@{url-path-img}/icon/icon-arrow-left.png') no-repeat center;
+				transform: translate(0%,-50%)!important;
+			background-size: contain;
+		}
+	}
+	&:hover{
+		.lg-prev{
+			&::after{
+				right: -20px!important;
+			}
+		}
+		.lg-next{	
+			&::after{
+				left: -20px!important;
+			}
+		}
+	}
+} 
+.lSAction{
+	> a{
+		width: 64px;
+    	height: 42px;
+    	@media @media-size-xs{width: 42px;}
+		&::before{display: none!important;}
+		&::after{
+			content: ''!important;
+			width: 100%;
+			height: 100%;
+		}
+    	&.lSPrev{
+			&::after{
+				right: -30px!important;
+				background: url('@{url-path-img}/icon/icon-arrow-left.png') no-repeat center;
+					transform: translate(0%,-50%)!important;
+				background-size: contain;
+			}
+		}
+    	&.lSNext{
+			&::after{
+				left: -30px!important;
+				background: url('@{url-path-img}/icon/icon-arrow-right.png') no-repeat center;
+					transform: translate(0%,-50%)!important;
+				background-size: contain;
+			}
+		}
+		&:hover{
+			&.lSPrev{
+				&::after{
+					right: -20px!important;
+				}
+			}
+	    	&.lSNext{
+				&::after{
+					left: -20px!important;
+				}
+			}
+		}
+	}
+	
+}
+._czr__gp__slider-inner{
+	@media @media-size-xs{margin: 0 20px;}
+	@media @media-size-sm{margin: 0 30px;}
+	@media @media-screen{margin: 0 50px;}
+}
+._czr__gp__slider-item{
+	@media @media-screen{height: 700px; overflow: hidden;}
+}
+.lSSlideOuter{
+    /*._czr__lSPager{
+    	margin: 0 80px;
+    	overflow: hidden;
+    }*/
+    
+    .lSSlideWrapper{
+    	margin-bottom: 40px;
+    }
+	.lSPager.lSGallery{
+		li{
+			position: relative;
+			//max-width: 175px;
+			cursor: pointer;
+			overflow: hidden;
+			&.active{
+				&::after{display: none;}
+				a{
+					&::before,
+					&::after{display: none;}
+				}
+			}
+			&:before{
+				transition: @transition-site;
+				content: '';				
+				position: absolute;
+				top: 0!important;
+				bottom: 0!important;
+				left: 0!important;
+				right: 0!important;
+				z-index: 0!important;
+				width: 100%!important;
+				height: 100%!important;
+			}
+			img{transition: @transition-site;}
+			&:hover{
+				&:before{
+					background: rgba(244, 119, 45, 0.5)!important;
+					z-index: 10!important;
+				}
+				img{
+					transform: scale(1.15);
+				}
+			}
+			&.active{
+				&:before{
+					background: rgba(244, 119, 45, 0.5)!important;
+					z-index: 10!important;
+				}
+				img{
+					transform: scale(1.15)!important;
+				}
+			}
+		}
+	}
+}
+
+
 ._czr__gp__gallery-view{
 	height: 950px;
 	margin-bottom: 40px;
@@ -3360,6 +3510,16 @@
 }
 ._czr__index-slider{
 	//opacity: @opacity;
+	@media @media-size-xs{height: 320px;}
+	@media @media-size-sm-p{height: 540px;}
+	@media @media-size-sm-l{height: 500px;}
+	@media @media-size-lg{height: 600px;}
+	@media @media-size-xl{height: 700px;}
+	@media @media-size-xl2{height: 700px;}
+	@media @media-size-xxl{height: 900px;}
+	.carousel, .carousel-inner, .item, .owl-stage-outer, .owl-stage, .owl-item{
+		height: 100%;
+	}
 	.owl-nav{
 		.owl-prev{			
 			position: absolute;
@@ -3391,6 +3551,11 @@
     			height: 32px;
     		} 
 		}
+	}
+	.item{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 }
 ._czr__isl-control {

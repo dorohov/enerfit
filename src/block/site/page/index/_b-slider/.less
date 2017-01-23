@@ -1,5 +1,15 @@
 ._czr__index-slider{
 	//opacity: @opacity;
+	@media @media-size-xs{height: 320px;}
+	@media @media-size-sm-p{height: 540px;}
+	@media @media-size-sm-l{height: 500px;}
+	@media @media-size-lg{height: 600px;}
+	@media @media-size-xl{height: 700px;}
+	@media @media-size-xl2{height: 700px;}
+	@media @media-size-xxl{height: 900px;}
+	.carousel, .carousel-inner, .item, .owl-stage-outer, .owl-stage, .owl-item{
+		height: 100%;
+	}
 	.owl-nav{
 		.owl-prev{			
 			position: absolute;
@@ -31,6 +41,11 @@
     			height: 32px;
     		} 
 		}
+	}
+	.item{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 }
 ._czr__isl-control {
