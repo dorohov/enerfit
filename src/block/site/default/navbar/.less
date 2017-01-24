@@ -1,7 +1,12 @@
 ._czr__navbar-site{
 	//opacity: @opacity;
 	background: @b-nav;
+	transition: @transition-site;
 	@media @media-device{
+		&.navbar-site-right-open{
+			top: 0!important; 
+			
+		}
 		.navbar-collapse {
 			position: fixed;
 			width: 100%;
