@@ -1,0 +1,376 @@
+<?php
+
+?>
+	<div id="content" >
+			
+			<div class="pageTopMenu" style="position: relative">
+				<div class="pageTopMenu-text">
+					<div style="display: inline-block">
+						<h1 class="pageTopMenu-textTitle">Умный дом</h1>
+						<div class="pageTopMenu-textInfo">Объедините устройства в вашем доме <br/> и создайте между ними сценарии на каждый день</div>
+					</div>
+				</div>
+				<img class="pageTopMenu-image" src="/images/promo-pages/set/3.jpg">
+				<div class="pageTopMenu-imageMobile" style="background-image: url('/images/promo-pages/set/3.jpg');"></div>
+				<div class="pageTopMenu-menu">
+										<div data-id="1-1 pageTopMenu-menu-item-active" class="pageTopMenu-menu-item pageTopMenu-menu-item-active" data-src="//images/promo-pages/set/3.jpg">
+							<a href="/nabori/bezopasnost-i-kontrol/" class="pageTopMenu-menu-item-link ">
+								<i class="pageTopMenu-menu-item-link-icon lockIconWhite"></i>
+								<span class="pageTopMenu-menu-item-link-title">Безопасность <nobr>и контроль</nobr></span>
+							</a>
+							<div class="pageTopMenu-menu-item-arrow"></div>
+						</div>
+										<div data-id="1-1 " class="pageTopMenu-menu-item " data-src="//images/promo-pages/set/3.jpg">
+							<a href="/nabori/osveshenie-i-elektropitanie/" class="pageTopMenu-menu-item-link ">
+								<i class="pageTopMenu-menu-item-link-icon lightIconWhite"></i>
+								<span class="pageTopMenu-menu-item-link-title">Освещение <nobr>и электропитание</nobr></span>
+							</a>
+							<div class="pageTopMenu-menu-item-arrow"></div>
+						</div>
+										<div data-id="1-1 " class="pageTopMenu-menu-item " data-src="//images/promo-pages/set/3.jpg">
+							<a href="/nabori/videonablyudenie-i-kontrol-dostupa/" class="pageTopMenu-menu-item-link ">
+								<i class="pageTopMenu-menu-item-link-icon eyeIconWhite"></i>
+								<span class="pageTopMenu-menu-item-link-title">Видеонаблюдение и контроль доступа</span>
+							</a>
+							<div class="pageTopMenu-menu-item-arrow"></div>
+						</div>
+										<div data-id="1-1 " class="pageTopMenu-menu-item " data-src="//images/promo-pages/set/3.jpg">
+							<a href="/nabori/otoplenie-i-klimat/" class="pageTopMenu-menu-item-link ">
+								<i class="pageTopMenu-menu-item-link-icon tempIconWhite"></i>
+								<span class="pageTopMenu-menu-item-link-title">Отопление <nobr>и климат</nobr></span>
+							</a>
+							<div class="pageTopMenu-menu-item-arrow"></div>
+						</div>
+								</div>
+			</div>
+			
+			
+			<script>
+			
+			(function($){
+				
+				$(document).ready(function(){
+					
+					setTimeout(function() {
+						$('.htmlSlider').animate({ opacity: 1 }, 2000);
+					}, 400);
+					
+					/*
+					$('.htmlSlider-slidersSlideHeaderBuyButton').click(function() {
+						var token = 'index_'  + ga_tokenURL + $(this).parent(0).parent(0).data('ga');
+						ga('send', 'event', 'Index', token);
+					});
+					*/
+					
+					 // Слайдер
+                    var slider = function() {
+                        var selectorSlickSlide = '.slick-slide';
+                        var selectorSlickArrowMobile = '.slick-arrow-mobile';
+                        var $usesCards = $('.htmlSlider-sliders');
+
+                        $usesCards.slick({
+                            centerMode: true,
+                            variableWidth: true,
+                            centerPadding: 0,
+                            prevArrow: '<div class="slick-prev"></div>',
+                            nextArrow: '<div class="slick-next"></div>',
+                            responsive: [
+                                {
+                                    breakpoint: 667,
+                                    settings: {
+                                        variableWidth: false
+                                    }
+                                }
+                            ]
+                        });
+
+                        var slickSlider = $usesCards.slick('getSlick');
+
+                        $usesCards.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+
+                            var classLeft = 'slick-left';
+                            var classRight = 'slick-right';
+
+                            $(selectorSlickSlide).removeClass(classLeft + ' ' + classRight);
+
+                            if (nextSlide == (slick.$slides.length - 1) && 0 == currentSlide) {
+                                $(".slick-slide[data-slick-index=-2]").addClass(classLeft);
+                                $(".slick-slide[data-slick-index=0]").addClass(classRight);
+                            }
+
+                            if (currentSlide == (slick.$slides.length - 1) && 0 == nextSlide) {
+                                $(".slick-slide[data-slick-index=" + (slick.$slides.length - 1) + "]").addClass(classLeft);
+                                $(".slick-slide[data-slick-index=" + (slick.$slides.length + 1) + "]").addClass(classRight);
+                            }
+
+                            $(".slick-slide[data-slick-index=" + (nextSlide - 1) + "]").addClass(classLeft);
+                            $(".slick-slide[data-slick-index=" + (nextSlide + 1) + "]").addClass(classRight);
+                        });
+
+                        $usesCards.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+                            //loadToMetrika();
+                        });
+
+                        $usesCards.trigger('beforeChange', [slickSlider.getSlick(), 0, 0]);
+
+                        // Переключение слайдов на мобильной версии
+                        $(document).on('click', selectorSlickArrowMobile, function() {
+                            var action = $(this).data('slick-action');
+
+                            $usesCards.slick(action);
+                        });
+
+                        //loadToMetrika();
+                    };
+
+                    slider();
+					
+				});
+				
+			})(jQuery);
+			
+			</script>
+			
+			
+			
+			<div class="pageContent pageSecurityAndControl">
+				<div class="pageHeader">
+					<h2 class="pageHeaderH1">Выберите сценарии для безопасности и контроля вашего умного дома</h2>
+				</div>
+				<div class="htmlSlider" style="opacity: 0">
+					<div class="htmlSlider-sliders">
+																		<div class="htmlSlider-slidersSlide htmlSlider-slidersSlideGreen slick-left slick-right" data-ga="zaschita-ot-protechek">
+								<div class="htmlSlider-slidersSlideHeader">
+									<span>Защита от протечек</span>
+								</div>
+								<div class="htmlSlider-slidersSlideImage">
+									<img class="htmlSlider-slidersSlideImageImg" src="/good/82/161.jpg"/>
+									<div class="htmlSlider-slidersSlideImageControllLeft">
+										<div class="htmlSlider-slidersSlideImageControllLeftIcon htmlSlider-controllsMobile arrowLeft slick-arrow-mobile" data-slick-action="slickPrev"></div>
+									</div>
+									<div class="htmlSlider-slidersSlideImageControllRight">
+										<div class="htmlSlider-slidersSlideImageControllRightIcon htmlSlider-controllsMobile arrowRight slick-arrow-mobile" data-slick-action="slickNext"></div>
+									</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderMobile">Защита от протечек</div>
+								<div class="htmlSlider-slidersSlideHeaderCols">
+									<div class="htmlSlider-slidersSlideHeaderColLeft">
+										<p class="htmlSlider-slidersSlideHeaderColLeftText">
+											В ванной комнате и на кухне я установил датчик протечки. Если на сенсор датчика попадет вода, мне сразу придет сообщение на мобильный телефон. Это очень удобно.                                     </p>
+										<p class="htmlSlider-slidersSlideHeaderColLeftName">
+											Антон, Рязань                                    </p>
+									</div>
+									<div class="htmlSlider-slidersSlideHeaderColRight">
+										
+																														<div class="htmlSlider-slidersSlideHeaderColRightSensor">
+												<img src="/images/good-icon/good-51.png" class="htmlSlider-slidersSlideHeaderColRightSensorImage"/>
+												<p class="htmlSlider-slidersSlideHeaderColRightSensorDescription">Датчик протечки KR-D104</p>
+											</div>
+
+																				
+																		</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderBuy goodCountItem" data-good-in-catalog="82">
+									<div class="htmlSlider-slidersSlideHeaderBuyButton" onclick="Rubetek.Cart.popupAddGood(82)">В корзину</div>
+									<div class="htmlSlider-slidersSlideHeaderBuyPrice">1 350<i class="icon icon-rouble"></i></div>
+								</div>
+							</div>
+																		<div class="htmlSlider-slidersSlide htmlSlider-slidersSlideRed slick-left slick-right" data-ga="preduprezhdenie-o-vozgoranii">
+								<div class="htmlSlider-slidersSlideHeader">
+									<span>Предупреждение о возгорании</span>
+								</div>
+								<div class="htmlSlider-slidersSlideImage">
+									<img class="htmlSlider-slidersSlideImageImg" src="/good/83/162.jpg"/>
+									<div class="htmlSlider-slidersSlideImageControllLeft">
+										<div class="htmlSlider-slidersSlideImageControllLeftIcon htmlSlider-controllsMobile arrowLeft slick-arrow-mobile" data-slick-action="slickPrev"></div>
+									</div>
+									<div class="htmlSlider-slidersSlideImageControllRight">
+										<div class="htmlSlider-slidersSlideImageControllRightIcon htmlSlider-controllsMobile arrowRight slick-arrow-mobile" data-slick-action="slickNext"></div>
+									</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderMobile">Предупреждение о возгорании</div>
+								<div class="htmlSlider-slidersSlideHeaderCols">
+									<div class="htmlSlider-slidersSlideHeaderColLeft">
+										<p class="htmlSlider-slidersSlideHeaderColLeftText">
+											Благодаря датчикам дыма угроза пожара мне не страшна.                                     </p>
+										<p class="htmlSlider-slidersSlideHeaderColLeftName">
+											Василий, Иркутск                                    </p>
+									</div>
+									<div class="htmlSlider-slidersSlideHeaderColRight">
+										
+																														<div class="htmlSlider-slidersSlideHeaderColRightSensor">
+												<img src="/images/good-icon/good-61.png" class="htmlSlider-slidersSlideHeaderColRightSensorImage"/>
+												<p class="htmlSlider-slidersSlideHeaderColRightSensorDescription">Датчик дыма KR-­SD02</p>
+											</div>
+
+																				
+																		</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderBuy goodCountItem" data-good-in-catalog="83">
+									<div class="htmlSlider-slidersSlideHeaderBuyButton" onclick="Rubetek.Cart.popupAddGood(83)">В корзину</div>
+									<div class="htmlSlider-slidersSlideHeaderBuyPrice">1 350<i class="icon icon-rouble"></i></div>
+								</div>
+							</div>
+																		<div class="htmlSlider-slidersSlide htmlSlider-slidersSlideBlue slick-left slick-right" data-ga="zabota-o-blizkih">
+								<div class="htmlSlider-slidersSlideHeader">
+									<span>Забота о близких</span>
+								</div>
+								<div class="htmlSlider-slidersSlideImage">
+									<img class="htmlSlider-slidersSlideImageImg" src="/good/76/158.jpg"/>
+									<div class="htmlSlider-slidersSlideImageControllLeft">
+										<div class="htmlSlider-slidersSlideImageControllLeftIcon htmlSlider-controllsMobile arrowLeft slick-arrow-mobile" data-slick-action="slickPrev"></div>
+									</div>
+									<div class="htmlSlider-slidersSlideImageControllRight">
+										<div class="htmlSlider-slidersSlideImageControllRightIcon htmlSlider-controllsMobile arrowRight slick-arrow-mobile" data-slick-action="slickNext"></div>
+									</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderMobile">Забота о близких</div>
+								<div class="htmlSlider-slidersSlideHeaderCols">
+									<div class="htmlSlider-slidersSlideHeaderColLeft">
+										<p class="htmlSlider-slidersSlideHeaderColLeftText">
+											Теперь я получаю уведомления о возвращении близких домой и могу видеть их на экране мобильного телефона. Это возможно благодаря датчику открытия двери и видеокамере в прихожей.                                     </p>
+										<p class="htmlSlider-slidersSlideHeaderColLeftName">
+											Светлана, Москва                                    </p>
+									</div>
+									<div class="htmlSlider-slidersSlideHeaderColRight">
+										
+																														<div class="htmlSlider-slidersSlideHeaderColRightSensor">
+												<img src="/images/good-icon/good-45.png" class="htmlSlider-slidersSlideHeaderColRightSensorImage"/>
+												<p class="htmlSlider-slidersSlideHeaderColRightSensorDescription">Датчик открытия KR-D026</p>
+											</div>
+
+																				
+																		</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderBuy goodCountItem" data-good-in-catalog="76">
+									<div class="htmlSlider-slidersSlideHeaderBuyButton" onclick="Rubetek.Cart.popupAddGood(76)">В корзину</div>
+									<div class="htmlSlider-slidersSlideHeaderBuyPrice">790<i class="icon icon-rouble"></i></div>
+								</div>
+							</div>
+																		<div class="htmlSlider-slidersSlide htmlSlider-slidersSlideOrange slick-left slick-right" data-ga="vsegda-v-kurse-sobytiy">
+								<div class="htmlSlider-slidersSlideHeader">
+									<span>Всегда в курсе событий</span>
+								</div>
+								<div class="htmlSlider-slidersSlideImage">
+									<img class="htmlSlider-slidersSlideImageImg" src="/good/87/166.jpg"/>
+									<div class="htmlSlider-slidersSlideImageControllLeft">
+										<div class="htmlSlider-slidersSlideImageControllLeftIcon htmlSlider-controllsMobile arrowLeft slick-arrow-mobile" data-slick-action="slickPrev"></div>
+									</div>
+									<div class="htmlSlider-slidersSlideImageControllRight">
+										<div class="htmlSlider-slidersSlideImageControllRightIcon htmlSlider-controllsMobile arrowRight slick-arrow-mobile" data-slick-action="slickNext"></div>
+									</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderMobile">Всегда в курсе событий</div>
+								<div class="htmlSlider-slidersSlideHeaderCols">
+									<div class="htmlSlider-slidersSlideHeaderColLeft">
+										<p class="htmlSlider-slidersSlideHeaderColLeftText">
+											Мои дети – очень любопытные. Мы с женой купили датчики открытия для дверец шкафов и тумбочек. Теперь, если наши маленькие сыщики открывают их, я тут же узнаю об этом.                                    </p>
+										<p class="htmlSlider-slidersSlideHeaderColLeftName">
+											Виталий, Ярославль                                    </p>
+									</div>
+									<div class="htmlSlider-slidersSlideHeaderColRight">
+										
+																														<div class="htmlSlider-slidersSlideHeaderColRightSensor">
+												<img src="/images/good-icon/good-45.png" class="htmlSlider-slidersSlideHeaderColRightSensorImage"/>
+												<p class="htmlSlider-slidersSlideHeaderColRightSensorDescription">Датчик открытия KR-D026</p>
+											</div>
+
+																				
+																		</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderBuy goodCountItem" data-good-in-catalog="87">
+									<div class="htmlSlider-slidersSlideHeaderBuyButton" onclick="Rubetek.Cart.popupAddGood(87)">В корзину</div>
+									<div class="htmlSlider-slidersSlideHeaderBuyPrice">790<i class="icon icon-rouble"></i></div>
+								</div>
+							</div>
+																		<div class="htmlSlider-slidersSlide htmlSlider-slidersSlideGreen slick-left slick-right" data-ga="kontrol-utechki-gaza">
+								<div class="htmlSlider-slidersSlideHeader">
+									<span>Контроль утечки газа</span>
+								</div>
+								<div class="htmlSlider-slidersSlideImage">
+									<img class="htmlSlider-slidersSlideImageImg" src="/good/84/163.jpg"/>
+									<div class="htmlSlider-slidersSlideImageControllLeft">
+										<div class="htmlSlider-slidersSlideImageControllLeftIcon htmlSlider-controllsMobile arrowLeft slick-arrow-mobile" data-slick-action="slickPrev"></div>
+									</div>
+									<div class="htmlSlider-slidersSlideImageControllRight">
+										<div class="htmlSlider-slidersSlideImageControllRightIcon htmlSlider-controllsMobile arrowRight slick-arrow-mobile" data-slick-action="slickNext"></div>
+									</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderMobile">Контроль утечки газа</div>
+								<div class="htmlSlider-slidersSlideHeaderCols">
+									<div class="htmlSlider-slidersSlideHeaderColLeft">
+										<p class="htmlSlider-slidersSlideHeaderColLeftText">
+											В квартире и на даче у меня стоят газовые плиты. Дети купили специальные датчики, которые оповещают об утечке газа. Теперь у меня гораздо меньше поводов для беспокойства.                                      </p>
+										<p class="htmlSlider-slidersSlideHeaderColLeftName">
+											Маргарита, Тюмень                                    </p>
+									</div>
+									<div class="htmlSlider-slidersSlideHeaderColRight">
+										
+																														<div class="htmlSlider-slidersSlideHeaderColRightSensor">
+												<img src="/images/good-icon/good-62.png" class="htmlSlider-slidersSlideHeaderColRightSensorImage"/>
+												<p class="htmlSlider-slidersSlideHeaderColRightSensorDescription">Датчик утечки газа KR­GD13</p>
+											</div>
+
+																				
+																		</div>
+								</div>
+								<div class="htmlSlider-slidersSlideHeaderBuy goodCountItem" data-good-in-catalog="84">
+									<div class="htmlSlider-slidersSlideHeaderBuyButton" onclick="Rubetek.Cart.popupAddGood(84)">В корзину</div>
+									<div class="htmlSlider-slidersSlideHeaderBuyPrice">3 650<i class="icon icon-rouble"></i></div>
+								</div>
+							</div>
+										</div>
+				</div>
+				<div class="pageDescriptionRow">
+					Требуется центр управления Rubetek
+				</div>
+
+				<div class="pageDescriptionRow title-row">
+					Возможности системы умный дом
+				</div>
+
+				<div class="capabilities">
+					<div class="capabilities-content">
+						<div class="capabilities-contentLineElement">
+							<div class="capabilities-contentLineElementIcon alarmIcon"></div>
+							<div class="capabilities-contentLineElementDescription">Получайте оповещения<br> на телефон о всех событиях в доме</div>
+						</div>
+						<div class="capabilities-contentLineElement">
+							<div class="capabilities-contentLineElementIcon eyeIconBlue"></div>
+							<div class="capabilities-contentLineElementDescription">Контролируйте обстановку просматривая видеокамеры на телефоне</div>
+						</div>
+						<div class="capabilities-contentLineElement">
+							<div class="capabilities-contentLineElementIcon lockIconBlue"></div>
+							<div class="capabilities-contentLineElementDescription">Добавьте электронные<br> замки и открывайте двери удаленно</div>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="bigPreview">
+					<div class="bigPreview-header">Начните с набора <nobr>«Безопасность <nobr>и контроль</nobr>»</nobr></div>
+					<div class="bigPreview-col">
+						<p class="bigPreview-colDescription">
+							Набор "Безопасность и контроль" обеспечит безопасность вашего дома и семьи где бы вы ни находились. В любой момент вы можете улучшить свой дом, добавив умные устройства различных производителей					</p>
+						<img class="bigPreview-col-mobileImg" src="/images/promo-pages/set/set-3.png">
+						<div class="bigPreview-colList">
+														<p class="bigPreview-colListElement"><i class="bigPreview-colListElementIcon" style="height: 28px; background: url(/images/ico/set/lock.svg) no-repeat;"></i>Защита от проникновений</p>
+														<p class="bigPreview-colListElement"><i class="bigPreview-colListElementIcon" style="height: 28px; background: url(/images/ico/set/drop.svg) no-repeat;"></i>Контроль протечки воды</p>
+														<p class="bigPreview-colListElement"><i class="bigPreview-colListElementIcon" style="height: 28px; background: url(/images/ico/set/fire.svg) no-repeat;"></i>Оповещения о возгорании</p>
+														<p class="bigPreview-colListElement"><i class="bigPreview-colListElementIcon" style="height: 28px; background: url(/images/ico/set/phone.svg) no-repeat;"></i>Удалённое управление с телефона</p>
+												</div>
+						<a href="/product/nabor-bezopasnost-i-monitoring/" data-ga="bezopasnost-i-kontrol" class="bigPreview-colLink borderLink">Подробнее о комплекте<i class="fa fa-chevron-right"></i></a>
+						<div class="bigPreview-colBuy goodCountItem" data-good-in-catalog="45">
+							<!--10 900 <i class="icon icon-rouble"></i>-->
+							<div class="bigPreview-colBuyPrice">11 200<i class="icon icon-rouble"></i></div>
+							<div class="bigPreview-colBuyButton buttonMain" data-ga="bezopasnost-i-kontrol"
+								 onclick="Rubetek.Cart.popupAddGood(73)">В корзину</div>
+						</div>
+					</div>
+					<div class="bigPreview-col">
+						<div class="bigPreview-colPreviewImage" style="background: url(/images/promo-pages/set/set-3.png); background-repeat: no-repeat; background-position: center; background-size: contain;"></div>
+					</div>
+				</div>
+			</div>
+
+	</div>

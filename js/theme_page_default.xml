@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+	
+	<update handle="empty"/>
+	
+	<referenceContainer name="root" >
+		
+		<referenceContainer name="page.wrapper" remove="true" />
+		<referenceContainer name="page.container" remove="true" />
+		
+		<container name="azbn.page-container" as="page.container" htmlTag="div" htmlId="mainPage" htmlClass="page azbn__page-container" >
+			<block class="Magento\Framework\View\Element\Template" name="azbn.block.header" as="azbn.block-header" template="Dorohov_CustomTpl::_/header.phtml" htmlClass="azbn__block-header" />
+			<container name="main" htmlTag="div" htmlClass=""/>
+			<block class="Magento\Framework\View\Element\Template" name="azbn.block.footer" as="azbn.block-footer" template="Dorohov_CustomTpl::_/footer.phtml" htmlClass="azbn__block-footer" />
+		</container>
+		
+		<container name="azbn.body__mobile-menu" as="mobile-menu" htmlTag="div" htmlClass="body__mobile-menu azbn__body__mobile-menu" >
+		
+		</container>
+		
+	</referenceContainer>
+	
+	
+	
+	<!--<referenceBlock name="content">
+	<referenceContainer name="main.content" >
+		
+		<block type="core/template" name="test.block" as="test.block" template="default.phtml" before="-" htmlClass="azbn-block" />
+		
+	</referenceContainer>
+	
+	<referenceContainer name="main.content" display="true" >
+			
+			<block class="core/template" name="test.block" as="test.block" template="default.phtml" before="-" htmlClass="azbn-block" />
+			
+		</referenceContainer>
+	
+	<reference name="main.content">
+		
+		<block type="core/template" name="test.block" as="test.block" template="root.phtml" before="-" htmlClass="azbn-block" />
+		
+	</reference>-->
+	
+</layout>
