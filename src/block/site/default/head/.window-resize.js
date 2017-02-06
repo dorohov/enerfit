@@ -4,7 +4,7 @@ var h_window = $(window).height(),
 var h_header = $('._czr__navbar-site').outerHeight(true),
 	h_footer = $('.footer-site').outerHeight(true),
 	h_heading = $('._czr__container-fluid').outerHeight(true),
-	h_catalog = $('._czr__catalog-page').outerHeight(true),
+	//h_catalog = $('._czr__catalog-page').outerHeight(true),
  	h_resize = h_window - h_header,
  	h_resize_map = h_window - h_header - h_heading - 50,
  	h_resize_xs = h_window,
@@ -109,7 +109,11 @@ if (device.mobile()) {
 	
 }	
 
-$("._czr__catalog-navbar").css("height", h_catalog);
+//$('._czr__catalog-navbar').css("height", h_catalog);
+
+$(document.body).trigger('azbn.recalc-height');
+
+
 
 if (w_window > 1399){$("._czr__resize-map #map").css("height", h_resize_map);}
 $('._czr__sp__item-block').hover(

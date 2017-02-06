@@ -25,3 +25,13 @@ $('._czr__gp__owl').owlCarousel({
 		}
 	}
 });
+
+
+$(document.body).on('azbn.recalc-height', null, {}, function(){
+	
+	var body = $(this);
+	
+	var h_catalog = body.find('._czr__catalog-page').outerHeight(true);
+	body.find('._czr__catalog-navbar').css('height', h_catalog);
+	
+});
