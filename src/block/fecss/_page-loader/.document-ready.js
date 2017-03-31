@@ -39,7 +39,7 @@
 				.data('counter-can-close-it', true)
 				.trigger('fecss.can-close-it');
 			
-		}, 5000);
+		}, 2700);
 		
 		/*
 		if(b.size()) {
