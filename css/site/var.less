@@ -58,6 +58,7 @@
 @media-notphone: ~"(min-width: 768px)";
 @media-size-md: ~"(min-width: 1025px) and (max-width: 1199px)";
 @media-size-lg: ~"(min-width: 1200px) and (max-width: 1399px)";
+@media-size-mdl: ~"(min-width: 1025px) and (max-width: 1399px)";
 @media-size-lg2: ~"(min-width: 1200px) and (max-width: 1300px)";
 @media-size-xl: ~"(min-width: 1400px)";
 @media-size-xl2: ~"(min-width: 1400px) and (max-width: 1680px)";
@@ -79,7 +80,12 @@
 
 @media-screen-5-4-lg: ~'(min-width: 1200px) and (max-width: 1399px) and (aspect-ratio: 5/4)';
 //===================
-
+.calcFontSize(@f-min, @f-max, @v-min, @v-max){
+	font-size: ~"calc( (100vw - @{v-min}px) / (@{v-max} - @{v-min}) * (@{f-max} - @{f-min}) + @{f-min}px)";
+}
+.calcLineHeight(@f-min, @f-max, @v-min, @v-max){
+	line-height: ~"calc( (100vw - @{v-min}px) / (@{v-max} - @{v-min}) * (@{f-max} - @{f-min}) + @{f-min}px)";
+}
 #site {
 	.bi(@img:'') {
 		background-image:url('@{url-path-img}/@{img}');

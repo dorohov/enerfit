@@ -1,0 +1,57 @@
+.index-reklama-block{
+	background: #3e3e3e;
+	position: relative;
+	color: #d2d2d2;
+    overflow: hidden;
+	@media @media-device{
+		padding: 30px 0 50px;
+	}
+	@media @media-screen{
+		min-height: 100vh;
+    	padding: 2vw 0;
+	}
+}
+._irb__{
+	&inner{
+		position: relative;
+		z-index: 2;
+    	padding: 0vw 6vw;
+		@media @media-screen{
+		    max-width: 1380px;
+    		width: 75vw;
+		}
+	}
+	&heading{
+		font-family: @muller-bold;
+		color: @b-orange;
+		.calcFontSize(24, 55, 320, 1680);
+		.calcLineHeight(26, 57, 320, 1680);
+		margin-bottom: 3.5vw;
+		@media @media-size-xs{margin-bottom: 35px;}
+	}
+	&row{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	&cols{
+		width: 50%;
+		padding-left: 5px;
+		padding-right: 5px;
+		@media @media-size-xs-p{width: 100%;}
+	}
+	&item{		
+		padding: 3.5vw 6vw;
+		font-family: @muller-bold;
+		background-position: center;
+		background-repeat: no-repeat;
+    	background-size: cover;
+    	margin-bottom: 10px;
+    	max-height: 430px;
+    	height: 25vw;    	
+		.calcFontSize(26, 36, 320, 1680);
+		.calcLineHeight(40, 50, 320, 1680);
+		@media @media-size-xs-p{height: 40vw; }
+	}
+}

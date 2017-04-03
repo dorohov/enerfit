@@ -31,19 +31,10 @@
 <link href="/css/site.css" rel="stylesheet"> 
 	</head>
 	<body>	
-		<div class="_czr__loader active page-loader" >
-	<div class="_czr__preloader-inner" >
-		<div class="_czr__preloader-process-container process-container" >
-			<div class="_czr__preloader-process-level process-level" ></div>
-		</div>
-		<div class="_czr__preloader-center" >
-			<a class="close-loader" href="#not-lazyload" ><img src="/img/default/logotip-preloader.png" alt=""></a>
-		</div>		
-	</div>
-</div>
+		
 
 		<nav class="navbar navbar-site _czr__navbar-site">
-	<div class="">
+	<div class="navbar-inner">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<a class="navbar-brand" href="/"><img src="/img/default/logotip.png" alt=""></a>
@@ -54,106 +45,137 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/about.html">О компании</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Тренажеры <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="/catalog.html">Все тренажеры</a></li>
-						<li><a href="/catalog.html">Кардиотренажеры</a></li>
-						<li><a href="/catalog.html">Силовые тренажеры</a></li>
-						<li><a href="/catalog.html">Свободные веса и аксессуары</a></li>
-						<li><a href="/catalog.html">Аэробика</a></li>
+			<div class="navbar-collapse-inner">
+				<div class="navbar-collapse-nav">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/about.html">О компании</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Тренажеры <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="/catalog.html">Все тренажеры</a></li>
+								<li><a href="/catalog.html">Кардиотренажеры</a></li>
+								<li><a href="/catalog.html">Силовые тренажеры</a></li>
+								<li><a href="/catalog.html">Свободные веса и аксессуары</a></li>
+								<li><a href="/catalog.html">Аэробика</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Серии <b class="caret"></b></a>
+							<ul class="dropdown-menu">						
+					    		<li><a href="#">MA</a></li>
+					    		<li><a href="#">MZ</a></li>
+					    		<li><a href="#">MN</a></li>
+					    		<li><a href="#">MU</a></li>
+					    		<li><a href="#">A9</a></li>
+					    		<li><a href="#">H</a></li>
+					    		<li><a href="#">ПРО</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Оборудование для клубов <b class="caret"></b></a>
+							<ul class="dropdown-menu">						
+					    		<li><a href="#">Мебель и элект. устройства</a></li>
+					    		<li><a href="#">Шкафчики для раздевалок</a></li>
+					    		<li><a href="#">Ресепшен</a></li>
+					    		<li><a href="#">Электронные замки</a></li>
+					    		<li><a href="#">Браслеты</a></li>
+					    		<li><a href="#">RFID-карты</a></li>
+							</ul>
+						</li>
+						<li><a href="/services.html">Услуги</a></li>
+						<li><a href="/gallery.html">Фотогалерея</a></li>
+						<li><a href="/video.html">Видео</a></li>                      
+						<li><a href="/contacts.html">Контакты</a></li>				
 					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Серии <b class="caret"></b></a>
-					<ul class="dropdown-menu">						
-			    		<li><a href="#">MA</a></li>
-			    		<li><a href="#">MZ</a></li>
-			    		<li><a href="#">MN</a></li>
-			    		<li><a href="#">MU</a></li>
-			    		<li><a href="#">A9</a></li>
-			    		<li><a href="#">H</a></li>
-			    		<li><a href="#">ПРО</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Оборудование для клубов <b class="caret"></b></a>
-					<ul class="dropdown-menu">						
-			    		<li><a href="#">Мебель и элект. устройства</a></li>
-			    		<li><a href="#">Шкафчики для раздевалок</a></li>
-			    		<li><a href="#">Ресепшен</a></li>
-			    		<li><a href="#">Электронные замки</a></li>
-			    		<li><a href="#">Браслеты</a></li>
-			    		<li><a href="#">RFID-карты</a></li>
-					</ul>
-				</li>
-				<li><a href="/services.html">Услуги</a></li>
-				<li><a href="/gallery.html">Фотогалерея</a></li>
-				<li><a href="/video.html">Видео</a></li>                      
-				<li><a href="/contacts.html">Контакты</a></li>				
-			</ul>
-
-			<form class="navbar-form" role="search" action="/search.html">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Поиск по сайту">
-					<span class="input-group-btn">
-						<button type="reset" class="btn-close"></button>
-						<button type="submit" class="btn-search"></button>
-					</span>
+					<form class="navbar-form" role="search" action="/search.html">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Поиск по сайту">
+							<span class="input-group-btn">
+								<button type="reset" class="btn-close"></button>
+								<button type="submit" class="btn-search"></button>
+							</span>
+						</div>
+					</form>
 				</div>
-			</form>
-		</div>
+				<div class="navbar-contacts">
+					<div class=""><a href="tel:+79107482732">+7 (910) <span>748-27-32</span></a></div>
+					<button type="buttom" class="btn-navbar-call" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+				</div>
+			</div>
+		</div> 
 	</div>
 </nav>
 
-		<header class="index-header _czr__index-header">
-	<div id="carousel-header" class="carousel _czr__ih-carousel slide" data-ride="carousel">
-		<!--<ol class="_czr__ih-carousel-indicators carousel-indicators">
-			<li data-target="#carousel-header" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-header" data-slide-to="1"></li>
-		</ol>-->
-		<a class="_czr__ih-control left" href="#carousel-header" data-slide="prev">
- 			<img src="/img/icon/icon-arrow-left.png" alt="" class="img-responsive">
- 		</a>
-		<a class="_czr__ih-control right" href="#carousel-header" data-slide="next">
- 			<img src="/img/icon/icon-arrow-right.png" alt="" class="img-responsive">
- 		</a>
-	  	<div class="carousel-inner">
-	    	<div class="item">
-	      		<div class="_czr__ih-inner" style="background: url('/img/index/bg-header1.png') no-repeat right bottom;">
-					<div class="_czr__ih-flex">
-						<div>
-							<div class="_czr__ih-heading">Тренажеры великолепного качества для вашего спортивного клуба</div>
-							<div class="_czr__ih-note">
-								<div>Мы занимаемся производством и оптовыми продажами спортивного оборудования<br> и предлагаем максимально полный ассортимент всех товаров, необходимых<br> для открытия спортивного клуба.</div>
-								<div>Минимальная сумма заказа - 50 000 рублей.</div>
-							</div>
-							<div><a href="/text.html" class="btn-orange">подробнее</a></div>
-						</div>
+		<header class="index-header-block">
+	<div class="_ihb__inner">
+		<h1 class="_ihb__heading">
+			<span>Тренажеры от производителя</span> для вашего спортивного клуба
+		</h1>
+		<div class="row _ihb__adv-row">
+			<div class="cols _ihb__adv-cols">
+				<div class="_ihb__adv-item">
+					<div class="_ihb__adv-icon"><img src="/img/index/icon-adv-1.png" alt=""></div>
+					<div class="_ihb__adv-name">
+						Полный спектр<br> оборудования
 					</div>
 				</div>
-	    	</div>
-	    	<div class="item">
-	      		<div class="_czr__ih-inner" style="background: url('/img/index/bg-header1.png') no-repeat right bottom;">
-					<div class="_czr__ih-flex">
-						<div>
-							<div class="_czr__ih-heading">Тренажеры отличного качества для вашего спортивного клуба</div>
-							<div class="_czr__ih-note">
-								<div>Мы занимаемся производством и оптовыми продажами спортивного оборудования<br> и предлагаем максимально полный ассортимент всех товаров, необходимых<br> для открытия спортивного клуба.</div>
-								<div>Минимальная сумма заказа - 50 000 рублей.</div>
-							</div>
-							<div><a href="/text.html" class="btn-orange">подробнее</a></div>
-						</div>
+			</div>
+			<div class="cols _ihb__adv-cols">
+				<div class="_ihb__adv-item">
+					<div class="_ihb__adv-icon"><img src="/img/index/icon-adv-2.png" alt=""></div>
+					<div class="_ihb__adv-name">
+						Доставка и сборка<br> бесплатно
 					</div>
 				</div>
-	    	</div>
+			</div>
+			<div class="cols _ihb__adv-cols">
+				<div class="_ihb__adv-item">
+					<div class="_ihb__adv-icon"><img src="/img/index/icon-adv-3.png" alt=""></div>
+					<div class="_ihb__adv-name">
+						Гарантия<br> 3 года
+					</div>
+				</div>
+			</div>
+			<div class="cols _ihb__adv-cols">
+				<div class="_ihb__adv-item">
+					<div class="_ihb__adv-icon"><img src="/img/index/icon-adv-4.png" alt=""></div>
+					<div class="_ihb__adv-name">
+						Работаем<br> по всей России
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</header> 
+</header>  
+
+		<div class="index-reklama-block">
+	<div class="_irb__inner">
+		<h2 class="_irb__heading">
+			Оборудование для проектов любого масштаба под ваш бюджет
+		</h2>
+	</div>
+	<div class="row _irb__row">
+		<div class="cols _irb__cols">
+			<div class="_irb__item" style="background-image: url(/img/index/reklama-item1.jpg)">Фитнес-клубов</div>
+		</div>
+		<div class="cols _irb__cols">
+			<div class="_irb__item" style="background-image: url(/img/index/reklama-item2.jpg)">Отелей и гостиниц</div>
+		</div>
+		<div class="cols _irb__cols">
+			<div class="_irb__item" style="background-image: url(/img/index/reklama-item3.jpg)">Офисов и предприятий</div>
+		</div>
+		<div class="cols _irb__cols">
+			<div class="_irb__item" style="background-image: url(/img/index/reklama-item4.jpg)">Домашнего зала</div>
+		</div>
+	</div>
+</div>  
 
 		<div class="index-product _czr__index-product">
+	<div class="_czr__ip-inner">		
+		<h2 class="_czr__ip-heading">
+			Полный спектр оборудования для залов любого оснащения
+		</h2>
+	</div>
 	<div class="_czr__ip-flex">
 		<div class="_czr__ip-col">
 			<div class="_czr__ip-item">
@@ -206,78 +228,23 @@
 	</div>
 </div>
 
-		<div class="index-services _czr__index-services">
-	<h2 class="_czr__is-heading">Наши услуги и преимущества</h2>
-	<div class="_czr__is-flex _cb__flex _col">
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item1">	
-				<div class="_czr__is-item-heading">Бесплатная доставка</div>
-			</div>
+		<div class="index-review-block">
+	<h2 class="_irevb__heading">
+		Получите точный расчет стоимости <br>и окупаемости вашего проекта
+	</h2>
+	<h3 class="_irevb__heading-small">Оставьте заявку мы свяжемся с вами и рассчитаем стоимость</h3>
+	<form class="_irevb__form" action="" method="post">
+		<div class="_irevb__form-item">
+			<input type="text" class="_irevb__form-control" placeholder="Введите Ваше имя">
 		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item2">	
-				<div class="_czr__is-item-heading">Сборка тренажеров</div>
-			</div>
+		<div class="_irevb__form-item">
+			<input type="tel" class="_irevb__form-control" placeholder="Введите Ваш телефон">
 		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item3">	
-				<div class="_czr__is-item-heading">Гарантия и сервис</div>
-			</div>
+		<div class="_irevb__form-item">
+			<button class="_irevb__form-btn" type="submit" >Отправить заявку</button> 
 		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item4">	
-				<div class="_czr__is-item-heading">Бесплатное обслуживание</div>
-			</div>
-		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item5">	
-				<div class="_czr__is-item-heading">Оборудование залов</div>
-			</div>
-		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item6">	
-				<div class="_czr__is-item-heading">Бесплатная замена</div>
-			</div>
-		</div>
-	</div>	
-</div>
-<!-- если нужны тултипы просто раскоменть:)
-<div class="index-services _czr__index-services">
-	<h2 class="_czr__is-heading">Наши услуги и преимущества</h2>
-	<div class="_czr__is-flex _cb__flex _col">
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item1" data-toggle="tooltip" data-placement="bottom" title="Бесплатная доставка при сумме заказа от 2 млн. руб.">	
-				<div class="_czr__is-item-heading">Бесплатная доставка</div>
-			</div>
-		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item2" data-toggle="tooltip" data-placement="bottom" title="Всплывающий текст" >	
-				<div class="_czr__is-item-heading">Сборка тренажеров</div>
-			</div>
-		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item3" data-toggle="tooltip" data-placement="bottom" title="Всплывающий текст" >	
-				<div class="_czr__is-item-heading">Гарантия и сервис</div>
-			</div>
-		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item4" data-toggle="tooltip" data-placement="bottom" title="Всплывающий текст" >	
-				<div class="_czr__is-item-heading">Бесплатное обслуживание</div>
-			</div>
-		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item5" data-toggle="tooltip" data-placement="bottom" title="Всплывающий текст" >	
-				<div class="_czr__is-item-heading">Оборудование залов</div>
-			</div>
-		</div>
-		<div class="_czr__is-item _cb__col">
-			<div class="_czr__is-item-inner item6" data-toggle="tooltip" data-placement="bottom" title="Всплывающий текст" >	
-				<div class="_czr__is-item-heading">Бесплатная замена</div>
-			</div>
-		</div>
-	</div>	
-</div>
--->
+	</form>
+</div> 
 
 		<div class="index-slider _czr__index-slider">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -407,6 +374,28 @@
 					</div>
 				</form>
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+		</div>
+	</div>
+</div> 
+		<div class="modal fade modal-site" id="modal-call" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<form action="#" class="modal-reviews">
+					<h3 class="modal-title">Обратный звонок</h3>
+					<div class="_mr__note">Если у Вас остались вопросы по заказу оборудования или сервиса, оставьте свои данные, и наши менеджеры свяжутся с Вами</div>
+					<div class="_czr__ms__input icon-user">
+						<input type="text" name="name" placeholder="Ваше имя*">
+					</div>
+					<div class="_czr__ms__input icon-tel">
+						<input type="tel" name="tel" placeholder="Ваш телефон*">
+					</div>
+					<div  class="_czr__ms__btn">
+						<button type="submit" class="btn-orange">Отправить</button>
+					</div>
+				</form>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
 			</div>
 		</div>
 	</div>

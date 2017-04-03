@@ -1,0 +1,85 @@
+.index-review-block{
+	//min-height: 100vh;
+	background: #3e3e3e;
+	position: relative;
+	color: #d2d2d2;
+    padding: 9.5vw 6vw 7.5vw;
+    overflow: hidden;
+	@media @media-notphone{
+	   	background-image: url("@{url-path-img}/bg/bg-reviews.png"); 
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+._irevb__{
+	&heading{
+		font-family: @muller-bold;
+		color: @b-orange;
+		.calcFontSize(24, 55, 320, 1680);
+		.calcLineHeight(26, 57, 320, 1680);
+		margin-bottom: 1.4vw;
+		@media @media-size-xs{
+			margin-bottom: 15px;
+			br{display: none;}
+		}
+	}
+	&heading-small{
+		font-family: @muller-bold;
+		color: #c17d55;
+		.calcFontSize(18, 22, 320, 1680);
+		.calcLineHeight(24, 28, 320, 1680);
+		margin-bottom: 2.5vw;
+		letter-spacing: .7px;
+		@media @media-size-xs{
+			margin-bottom: 35px;
+			br{display: none;}
+		}
+	}
+	&form{		
+		@media @media-device{max-width: 375px}
+		@media @media-screen{max-width: 455px;}
+	}
+	&form-item{
+		margin-bottom: 10px;
+	}
+	&form-control{
+		background: #676767;
+		border: 2px solid #676767;
+		transition: @transition-site;
+		color: @white;
+		text-align: center;
+		width: 100%;
+		padding: 20px;
+		&::-moz-placeholder{
+			color:#e7e7e7;
+			transition: @transition-site;
+		}
+		&::-webkit-input-placeholder {
+			color:#e7e7e7;
+			transition: @transition-site;
+		}
+		&:focus{
+			border: 2px solid @b-orange;
+			color: @black;
+			background: @white;
+			&::-moz-placeholder{
+				color: @black;
+			}
+			&::-webkit-input-placeholder {
+				color: @black;
+			}
+		}
+	}
+	&form-btn{
+		margin-top: 10px;
+		border: 2px solid @b-orange;
+		background: none;
+		color: @b-orange;
+		width: 100%;
+		text-transform: uppercase;
+		font-family: @muller-bold;
+		letter-spacing: 1px;
+		padding: 20px;
+	}
+}

@@ -32,7 +32,7 @@
 	</head>
 	<body>	
 		<nav class="navbar navbar-site _czr__navbar-site">
-	<div class="">
+	<div class="navbar-inner">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<a class="navbar-brand" href="/"><img src="/img/default/logotip.png" alt=""></a>
@@ -43,57 +43,64 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="/about.html">О компании</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Тренажеры <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="/catalog.html">Все тренажеры</a></li>
-						<li><a href="/catalog.html">Кардиотренажеры</a></li>
-						<li><a href="/catalog.html">Силовые тренажеры</a></li>
-						<li><a href="/catalog.html">Свободные веса и аксессуары</a></li>
-						<li><a href="/catalog.html">Аэробика</a></li>
+			<div class="navbar-collapse-inner">
+				<div class="navbar-collapse-nav">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/about.html">О компании</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Тренажеры <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="/catalog.html">Все тренажеры</a></li>
+								<li><a href="/catalog.html">Кардиотренажеры</a></li>
+								<li><a href="/catalog.html">Силовые тренажеры</a></li>
+								<li><a href="/catalog.html">Свободные веса и аксессуары</a></li>
+								<li><a href="/catalog.html">Аэробика</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Серии <b class="caret"></b></a>
+							<ul class="dropdown-menu">						
+					    		<li><a href="#">MA</a></li>
+					    		<li><a href="#">MZ</a></li>
+					    		<li><a href="#">MN</a></li>
+					    		<li><a href="#">MU</a></li>
+					    		<li><a href="#">A9</a></li>
+					    		<li><a href="#">H</a></li>
+					    		<li><a href="#">ПРО</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Оборудование для клубов <b class="caret"></b></a>
+							<ul class="dropdown-menu">						
+					    		<li><a href="#">Мебель и элект. устройства</a></li>
+					    		<li><a href="#">Шкафчики для раздевалок</a></li>
+					    		<li><a href="#">Ресепшен</a></li>
+					    		<li><a href="#">Электронные замки</a></li>
+					    		<li><a href="#">Браслеты</a></li>
+					    		<li><a href="#">RFID-карты</a></li>
+							</ul>
+						</li>
+						<li><a href="/services.html">Услуги</a></li>
+						<li><a href="/gallery.html">Фотогалерея</a></li>
+						<li><a href="/video.html">Видео</a></li>                      
+						<li><a href="/contacts.html">Контакты</a></li>				
 					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Серии <b class="caret"></b></a>
-					<ul class="dropdown-menu">						
-			    		<li><a href="#">MA</a></li>
-			    		<li><a href="#">MZ</a></li>
-			    		<li><a href="#">MN</a></li>
-			    		<li><a href="#">MU</a></li>
-			    		<li><a href="#">A9</a></li>
-			    		<li><a href="#">H</a></li>
-			    		<li><a href="#">ПРО</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Оборудование для клубов <b class="caret"></b></a>
-					<ul class="dropdown-menu">						
-			    		<li><a href="#">Мебель и элект. устройства</a></li>
-			    		<li><a href="#">Шкафчики для раздевалок</a></li>
-			    		<li><a href="#">Ресепшен</a></li>
-			    		<li><a href="#">Электронные замки</a></li>
-			    		<li><a href="#">Браслеты</a></li>
-			    		<li><a href="#">RFID-карты</a></li>
-					</ul>
-				</li>
-				<li><a href="/services.html">Услуги</a></li>
-				<li><a href="/gallery.html">Фотогалерея</a></li>
-				<li><a href="/video.html">Видео</a></li>                      
-				<li><a href="/contacts.html">Контакты</a></li>				
-			</ul>
-
-			<form class="navbar-form" role="search" action="/search.html">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Поиск по сайту">
-					<span class="input-group-btn">
-						<button type="reset" class="btn-close"></button>
-						<button type="submit" class="btn-search"></button>
-					</span>
+					<form class="navbar-form" role="search" action="/search.html">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Поиск по сайту">
+							<span class="input-group-btn">
+								<button type="reset" class="btn-close"></button>
+								<button type="submit" class="btn-search"></button>
+							</span>
+						</div>
+					</form>
 				</div>
-			</form>
-		</div>
+				<div class="navbar-contacts">
+					<div class=""><a href="tel:+79107482732">+7 (910) <span>748-27-32</span></a></div>
+					<button type="buttom" class="btn-navbar-call" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+				</div>
+			</div>
+		</div> 
 	</div>
 </nav>
 
